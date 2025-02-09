@@ -75,8 +75,8 @@ plugins:
       archive: false
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
-  - minify:
-      minify_html: false
+  # - minify:
+  #     minify_html: false
 
 # Additional configuration
 extra:
