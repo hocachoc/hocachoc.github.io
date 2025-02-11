@@ -3,7 +3,7 @@ site_name: Học Cách Học DevOps
 site_url: https://hocachoc.dev
 site_author: Nhâm Chấn Vĩ
 site_description: >-
-  Cung cấp phương pháp và kiến thức cũng như kinh nghiệm trong việc học DevOps
+  Cung cấp phương pháp và kiến thức cũng như kinh nghiệm trong việc học DevOps.
 
 # Repository
 repo_name: hocachoc.github.io
@@ -143,10 +143,10 @@ not_in_nav: |
 
 # Page tree
 nav:
-  - Recall: index.md
+  - Flashcards: index.md
   - Blog:
     - blog/index.md
-  - Inspired: recalls/learning-how-to-learn.md
+  # - Inspired: recalls/learning-how-to-learn.md
   # - Tutorials:
   #   - tutorials/index.md
   #   - OpenTofu: 
