@@ -8,6 +8,20 @@ hide:
 
 ## Việc Học Là Gì?
 
+??? abstract "Tổng hợp ý chính"
+    Chế độ Tập Trung, chế độ Lan Toả, Sự Chần Chờ, Pomodoro, Trí Nhớ Ngắn Hạn, Trí Nhớ Dài Hạn, Nhắc Lại Ngắt Quãng, Giấc Ngủ
+    ??? success "Cố gắng nhớ lại trước khi xem đáp án"
+
+        * Hai chế độ tư duy - Tập Trung và Lan Toả
+        * Chế độ Tập Trung là khi tập trung toàn bộ tâm trí, sự chú ý vào một việc nào đó nhằm cố gắng hiểu hoặc làm.
+        * Chế độ Lan Toả là chế độ thoải mái, khi cơ thể và tâm trí không còn tập trung và để não bộ giải quyết hoặc tạo kết nối các mẫu kiến thức với nhau một cách ngẫu nhiên
+        * Sự chần chờ là khi bạn muốn làm việc gì khó hoặc gặp một kích thích nào đó (tin nhắn, email, âm thanh,..) thì não của bạn sẽ chuyển hướng hành động của bạn sang làm một việc dễ chịu hơn (facebook, tiktok, chơi game,...)
+        * Sử dụng Pomodoro để ứng dụng chế độ Tập Trung (25 phút) xem kẽ chế độ Lan Toả (5 phút) để tăng khả năng nhớ và hiểu, khắc phục sự chần chờ cũng như thư giãn tâm trí.
+        * Trí Nhớ Ngắn Hạn như một bản đen chất lượng kém, kiến thưc mới được ghi lên bản mờ nhạt dễ phai và biến mất.
+        * Trí Nhớ Dài Hạn như một nhà kho không lồ, kiến thực được lưu trong những gói hàng trải rộng khắp nhà kho, việc truy xuất gói hàng cần rất nhiều thời gian.
+        * Sự dụng Nhắc Lại Cách Quãng để chuyển kiến thức từ Trí Nhớ Ngắn Hạn và Trí Nhớ Dài Hạn bằng cách Tập Trung học 1 lần, nhắc lại 1 ngày sau, nhắc lại 1 tuần sau, nhăc lại 1/3/6 tháng sau.
+        * Giấc ngủ giúp đào thải độc tố khi chúng ta thức, giúp các tế bào não kết nối dễ dàng hơn, ngoài ra, khi ngủ chúng ta sẽ rơi vào chế độ Lan Toả sẽ giúp củng cố kiến thức và hiểu vấn đề cũng như việc tìm ra giải pháp cho các vấn đề khó một cách ngẫu nhiên.
+
 <div class="grid" markdown>
 
 ??? question "Chế độ Tập Trung là gì?"
@@ -108,6 +122,7 @@ hide:
 
 ??? question "Trí nhớ ngắn hạn là gì?"
     ??? success "Cố gắng nhớ lại trước khi xem đáp án"
+        Theo các nhà nghiên cứu thì mỗi người có 4 cái khe trong bộ nhớ ngắn hạn, mỗi khe có thể kết nối tới một mẫu kiến thức nào đó.
         !!! example Như "bảng đen" cũ
             Như một cái bảng đen cũ, các thông tin ghi trên bảng đen thường rất mờ nhạt và dễ bị xoá mất.
         !!! example Như "mẫu giấy nháp" dùng một lần
@@ -142,124 +157,129 @@ hide:
         * Tiết kiệm thời gian: Thay vì phải "học lại" từ đầu, bạn chỉ cần "ôn lại" những điểm chính, giúp tiết kiệm thời gian và công sức.
         * Tăng cường trí nhớ: Nhắc lại cách quãng giúp bạn "ghi nhớ" kiến thức lâu dài hơn, "sử dụng" chúng một cách linh hoạt và hiệu quả.
 
-??? question "Tại sao Nhắc Lại Cách Quãng hiệu quả?"
+??? question "Não chúng ta sẽ làm gì khi chúng ta đang ngủ?"
     ??? success "Cố gắng nhớ lại trước khi xem đáp án"
-        Nhắc lại cách quãng là một kỹ thuật học tập hiệu quả, dựa trên nguyên tắc "quên lãng" của não bộ. Thay vì "nhồi nhét" kiến thức trong một lần, bạn sẽ "chia nhỏ" quá trình học tập và "ôn lại" kiến thức theo những "khoảng thời gian" khác nhau.
+        Việc thức dậy thuần tuý tạo ra các chất độc hại trong não, muốn loại bỏ các chất độc hại trong não đơn giản là chúng ta chỉ cần ngủ.
+        !!! example Như dòng kênh đầy rác ở một khu ổ chuột
+            Hai bên bờ kè tượng trung cho các tế bào não, còn rác là chất được trong não. Khi ngủ, các tế bào não được co lại làm tăng khoảng cách giữa các tế bào não, như việc chúng ta mở rộng kênh ra, lúc này thì rác sẽ không còn tích tụ nữa mà sẽ được trôi đi, giữ cho kênh sạch sẽ.
+        !!! example Như con đường đông đúc xe
+            Cũng tương tự khi bạn hình dung dòng xe đông đúc trên một con đường, nếu chúng ta gia tăng khoảng cách hai bên lề đường thì con đường sẽ thông thoáng hơn.
 
-        * Tận dụng "quên lãng": Khi bạn ôn lại kiến thức ngay trước khi quên, não bộ sẽ "củng cố" lại trí nhớ và "chuyển" thông tin từ trí nhớ ngắn hạn sang trí nhớ dài hạn.
-        * Tiết kiệm thời gian: Thay vì phải "học lại" từ đầu, bạn chỉ cần "ôn lại" những điểm chính, giúp tiết kiệm thời gian và công sức.
-        * Tăng cường trí nhớ: Nhắc lại cách quãng giúp bạn "ghi nhớ" kiến thức lâu dài hơn, "sử dụng" chúng một cách linh hoạt và hiệu quả.
+??? question "Thiếu ngủ sẽ có tác hại gì?"
+    ??? success "Cố gắng nhớ lại trước khi xem đáp án"
+        Việc ngủ nghe có vẻ lãng phí thời gian, thực tế ngủ đủ giấc giúp não bạn sạch sẽ và khoẻ mạnh. Tưởng tưởng khi bạn thiếu ngủ, não bạn chứa đầy độc tố trong não, các độc tố sẽ cản trợ việc kết nối giữa các tế bào não với nhau làm cho bạn khó tập trung hoặc giải quyết các vấn đề khó.
+        Ngoài ra, ngủ quá ít trong thời gian dài cũng các triệu chứng như đau đầu, trầm cảm, đau tim, tiểu đường và đơn gian là bạn sẽ chết sớm.
+        Bên cạnh đó, giấc ngủ không những tẩy sạch các độc tố trong não mà giấc ngủ còn đóng vai trò quan trọng trong trí nhớ và việc học.
+
+??? question "Giấc ngủ trong trí nhớ và việc học?"
+    ??? success "Cố gắng nhớ lại trước khi xem đáp án"
+        Có vẻ trong khi ngủ, não bạn sắp xếp ngăn nắp các ý tưởng và khái niệm mà bạn nghĩ đến hoặc đang học. Não xoá đi những phần ít quan trọng của trí nhớ và đồng thời củng cố những vùng mà bạn đang cần học và muốn nhớ.
+        Giấc ngủ cũng được biết là làm tăng khả năng trong việc giải quyết các vấn đề khó và hiểu điều mà bạn đang cố học. Khi ngủ, bạn hoàn toàn chấm dứt trạng thái ý thức và chuyển sang trạng thái tiềm thức nơi mà các phần não khác hoạt động mạnh khi bạn đang ngủ. Và đó cũng là kết quả của chế độ Lan Toả hoạt động, tuy nhiên, bạn phải thật sự ở chế độ Tập Trung trước đó. 
+        Nếu bạn tập trung học ngay trước khi ngủ trưa hoặc đi ngủ vào buổi tối thì bạn sẽ tăng cơ hội nằm mơ về nó. Càng tâm niệm về việc mơ về nó thì bạn càng tăng khả năng mơ về nó. Mơ về những gì bạn đang học có thể làm tăng cường khả năng hiểu của bạn về nó. Cho nên muốn nhớ và hiểu sâu thì sau khi học tâp trung bạn nên chợp mắt một chút.
 </div>
 
 ## Chunking
 
-??? question "Việc Học Là Gì?"
-    ??? success "Answer"
-        Bộ não con ngưởi phức tạp hơn thế nhiều. Hóa ra là, chỉ cần bạn hiểu chỉ một ít trong một vài nguyên tắc cơ bản về cách thức làm việc của bộ não, bạn có thể học tập dễ dàng hơn và ít bị nản chí hơn.
-
-
 <div class="grid" markdown>
 
-??? question "What Is Focused Mode?"
-    ??? success "Answer"
-        Answer 1
+??? question "Chunk và Chunking là gì?"
+    ??? success "Cố gắng nhớ lại trước khi xem đáp án"
+        Chunk nghĩa là cụm/mẫu/đoạn từ ngữ cảnh, còn Chunking nghĩa là việc học theo cụm/mẫu/đoạn thông qua ngữ cảnh.
+        Khi bạn tập trung chú ý vào một thứ gì đó thì gần như bạn có 1 con bạch tuộc với 4 xúc tu trượt qua 4 khe của bộ nhớ ngắn hạn giúp bạn kết nối với những thông tin mà bạn có thể có trong nhiều phần của não.
+        Tập trung sự chú ý để bạn kết nối các phần của não để nối các ý tưởng với nhau là một phần quan trọng trong chế độ tập trung của việc học. Nó cũng thường là điều giúp bạn bắt đầu hình thành một Chunk.
+        Điều này khác với các kết nối ngẫu nhiên trong chế độ Lan Toả.
+        !!! failure "Tức giận, căng thẳng, hoặc sợ hãi"
+            Thú vị là khi bạn bị căng thẳng, con bạch tuộc chú ý của bạn bắt đầu mất khả năng tạo ra một số kết nối đó. Đó là tại sao não bạn không có vẻ làm việc ổn khi bạn tức giận, căng thẳng, hoặc sợ hãi.
 
-??? question "What Is Diffuse Mode?"
-    ??? success "Answer"
-        Answer 1
+??? question "Làm sao để tinh thông một lĩnh vực?"
+    ??? success "Cố gắng nhớ lại trước khi xem đáp án"
+        Một trong những bước đầu tiên để đạt tới sự tinh thông trong các chủ đề học thuật là tạo ra các đoạn khái niệm, những bước nhảy trí tuệ kết nối các bit thông tin phân tán thông qua ý nghĩa. Khái niệm về các đoạn thần kinh cũng áp dụng trong thể thao, âm nhạc khiêu vũ, thật sự là về bất cứ điều gì mà con người có thể đạt được tới.
+        
+        Về cơ bản, một đoạn nghĩa là một mạng lưới các tế bào thần kinh được sử dụng để kích thích cùng nhau sao cho bạn có thể nghĩ một ý hoặc thực hiện một hành động một cách trôi chảy và hiệu quả. Nhắc lại và thực hành tập trung, sáng tạo ra những dấu vết trí óc mạnh mẽ, giúp bạn tạo ra các đoạn.
+        
+        Con đường tới sự tinh thông được xây dựng từng tí một, những đoạn nhỏ có thể trở thành lớn hơn, và mọi sự tinh thông dùng làm cơ sở cho những giải thích sáng tạo hơn khi bạn dần trở nên làm chủ các tài liệu. Nói cách khác, như bạn sẽ thấy sau đây thực hành và nhắc lại trong việc xây dựng các đoạn không phải là tất cả những gì mà bạn cần để trở thành một người thực sự làm chủ những tài liệu mà bạn học. Việc phân đoạn giúp não bạn làm việc hiệu quả hơn. Một khi bạn phân đoạn một ý tưởng, một khái niệm hoặc một hành động bạn không biết cần phải nhớ mọi chi tiết cơ bản nhỏ nhất. Bạn đã có ý tưởng chính, đoạn suy nghĩ, và điều đó là đủ.
+        !!! example Như "đánh răng" mỗi sáng thức dậy
+            Bạn chỉ nghĩ đơn giản, như là, tôi sẽ đánh răng, nhưng thật kinh ngạc khi bạn nhận ra cả một chuỗi thủ tục phức tạp gồm những hoạt động cơ bản diễn ra với một đoạn suy nghĩ đơn giản đó.
+        
+??? question "Làm sao để hình thành một Chunk?"
+    ??? success "Cố gắng nhớ lại trước khi xem đáp án"
 
-??? question "What Is Focused Mode?"
-    ??? success "Answer"
-        Answer 1
+        1. Bước 1: tập trung toàn bộ sự chú ý của bạn vào những thông tin mà bạn muốn hình thành Chunk.
+        2. Bước 2: hiểu ý tưởng cơ bản mà bạn đang cố gắng hình thành Chunk, dù đó là hiểu một khái niệm hoặc một bản chất của một loại vấn đề toán học cụ thể.
 
-??? question "What Is Diffuse Mode?"
-    ??? success "Answer"
-        Answer 1
-??? question "What Is Focused Mode?"
-    ??? success "Answer"
-        Answer 1
+            !!! notes "Tổng hợp ý chính"
+                Tìm ra ý tưởng chính của các ý tưởng
 
-??? question "What Is Diffuse Mode?"
-    ??? success "Answer"
-        Answer 1
+            Tuy nhiên, việc hiểu cách giải quyết một vấn đề không có nghĩa là bạn có thể tự giải quyết được vấn đề. Việc gấp sách lại và tự kiểm tra xem liệu bạn, tự bạn có thể giải quyết được vấn đề mà bạn nghĩ bạn hiểu không sẽ làm tăng tốc việc học của bạn. Bạn phải thực sự làm điều đó.
+            !!! example "Nhìn người khác vẽ không có nghĩa bạn thực sự có thể tạo ra tác phẩm đó."
+            !!! example "Nghe một bài hát không có nghĩa là bạn thực sự hát được bài đó."
 
-??? question "What Is Focused Mode?"
-    ??? success "Answer"
-        Answer 1
+            Chỉ vì bạn nhìn thấy nó, hay thậm chí là bạn hiểu nó, điếu đó không có nghĩa là bạn có thể thực sự làm được nó. Chỉ có tự bạn làm mới giúp tạo ra những mẫu thần kinh làm nền tảng cho sự tinh thông thực sự
+        3. Bước 3: kiếm được ngữ cảnh, để biết được khi nào sử dụng và khi nào không sử dụng cách giải quyết vấn đề.
 
-??? question "What Is Diffuse Mode?"
-    ??? success "Answer"
-        Answer 1
+            !!! notes "Lướt nhanh hai phút hình ảnh và mục lục một chương trước khi bắt đâu học để nắm được bức tranh toàn cảnh"
+
+            Nhũng loại hoạt động này có thể giúp bạn biết chổ sắp đặt Chunk mà bạn đang xây dựng, làm sao để các Chunk liên quan tới nhau.
+
+        !!! example "Học các môn nghệ thuật"
+            Như tập đánh một bản nhạc ghitar, trước tiên, đại đa số sẽ nghe bản nhạc một lần hoặc xem ai đó biểu diễn một lần, rồi bạn bắt đâu tập từng đoạn nhỏ đến khi thành thục rồi chuyển qua đoạn khác, cuối cùng bạn dần dần nối các đoạn nhỏ đã tập và đánh một bản nhạc hoàn chỉnh. Tương tự như việc tập hát, tập nhảy, vẽ,...
+        !!! example "Học các môn thể thao"
+            Như tập chơi bóng đá, trước tiên, các bạn sẽ tập từng kỹ năng nhỏ từ việc giữ bóng, dắt bóng, chuyền bóng hoặc sút. Sau đó bạn sẽ tập những kỹ năng phối hợp để có thể vào sân thi đấu.
+        !!! example "Học Toán và Khoa Học"
+            Thường thì mỗi vấn đề hoặc khái niệm sẽ đi với đáp án có sẵn, việc bạn cần làm là tìm hiểu tại sao mỗi bước lại làm như vậy. Tuy nhiên lại không có gì nói về sự kết nối giữa các bước. Tức là về việc  tại sao bước cụ thể này lại là điều tiếp theo mà bạn nên làm như vậy. Cách học máy móc như vậy cần tránh, bạn cần hiểu được bước tranh tổng thể và sáng tạo cách tới đích thông qua từng bước cụ thể.
+            
+??? question "Tầm quan trọng của việc nhớ lại?"
+    ??? success "Cố gắng nhớ lại trước khi xem đáp án"
+        Nghiên cứu của Karpicke cho thấy việc nhớ lại sau khi nghiên cứu một tài liệu sau đó nghiên cứu lại và nhớ lại nó một lần nữa. Đó là, họ cố đã cố gắng nhớ những ý chính và điều này giúp nhớ lâu hơn và học sâu hơn.
+        
+        Việc lập bản đồ khái niệm, vẽ các biểu đồ chỉ ra quan hệ các khái niệm mới là cách tốt để tổng hợp tuy nhiên nếu các khối cơ bản chưa được nhúng vào trong não, thì các biểu đồ không thể hoạt động
+        !!! example "Như em bé tập chạy trong khi chưa biết bò"
+
+??? question "Ảo Tưởng về Năng Lực trong học tập?"
+    ??? success "Cố gắng nhớ lại trước khi xem đáp án"
+        Đó là khi bạn sử dụng phương pháp học không hiệu quả, chúng đánh lừa tâm trí của bạn nghĩ rằng bạn đang học một cái gì đó, trong khi bạn chỉ chủ yếu là lãng phí thời gian của mình.
+
+        Nguyên nhân mà học sinh vẫn thích tiếp tục đọc lại những chú thích của mình hoặc vở, là vì khi họ có sách hoặc GOOGLE mở ngay trước mặt họ, chúng cung cấp ảo tưởng rằng tài liệu cũng nằm trong đầu họ. Nhưng không phải thế bởi vì nó có thể dễ đang hơn để nhìn vào một cuốn sách thay vì nhớ lại, học sinh khăng khăng giữ ảo tưởng học bằng cách mà đơn giản là không hiệu quả cho lắm.
+
+??? question "Kiểm tra nhỏ và giá trị của phạm lỗi"
+    ??? success "Cố gắng nhớ lại trước khi xem đáp án"
+        Trong một vài ý nghĩa, đó chính là những gì mà việc nhớ lại đang thực hiện. cho phép bạn biết được bạn có thực sự nắm chắc một ý tưởng. Nếu bạn mắc lỗi trong việc bạn đang làm, đó thực sự là một việc tốt. Bạn muốn cố gắng không lặp lại lỗi, dĩ nhiên rồi, nhưng lỗi rất đáng giá để mắc phải trong những bài tự kiểm tra nhỏ của bạn trước khi làm bài kiểm tra nâng cao thực sự. Bởi vì chúng cho phép bạn sửa chữa và bạn lấp đầy lỗ hổng kiến thức từ từ. Lỗ sai giúp sưả lỗi suy nghĩ của bạn, vì thế bạn có thể học tốt hơn và làm tốt hơn.
+
+??? question "Thay đổi địa điểm học tập"
+    ??? success "Cố gắng nhớ lại trước khi xem đáp án"
+        Theo nghiên cứu cho thấy nếu bạn chuẩn bị một kỳ thi thường sẽ tổ trước trong phòng thi, việc bạn học trước đó ở một nơi nhất định có thể sẽ neo cho bạn về địa điểm học và khi bạn vào phòng thi sẽ tạo thành rào cản tâm lý do bạn đã neo địa điểm học tập, một cách giải quyết là đừng để neo vào một địa điểm nhất định, bạn có thể thay đổi địa điểm học tập từ sở thích của mình.
+
+??? question "Các phương pháp học tập ít hiệu quả?"
+    ??? success "Cố gắng nhớ lại trước khi xem đáp án"
+        Việc học thuộc lòng hoặc đọc đi đọc lại thụ động nhiều lần toàn bộ tài liệu.
+         
+??? question "Ứng dụng hệ thống Flashcards trong việc học?"
+    ??? success "Cố gắng nhớ lại trước khi xem đáp án"
+        Một mặt ghi câu hỏi và mặt kia ghi câu trả lời. Cố gắng nhớ lại trước khi xem đáp án. Sau đó kiểm tra nhớ lại với đáp án. 
+        Lên lịch cách 1 ngày, 1 tuần , 1/3/6 tháng nhắc lại (Nhắc Lại Ngắt Quãng)
+
+??? question "Điều gì thúc đẩy việc học của bạn?"
+    ??? success "Cố gắng nhớ lại trước khi xem đáp án"
+        Điều có thể làm cho thông tin in sâu một cách vững chắc vào tâm trí của bạn.
+
+        * Acetylcholine
+        * Dopamine
+        * Serotonin
+
+        !!! example "Ví dụ"
+
+        
+                 
+
+??? question "Overlearning là gì?"
+    ??? success "Cố gắng nhớ lại trước khi xem đáp án"
+        Điều có thể làm cho thông tin in sâu một cách vững chắc vào tâm trí của bạn.
+        !!! example "Ví dụ"
+                 
+
 </div>
 
 ## Procrastination and Memory
 
-<div class="grid" markdown>
-
-??? question "What Is Focused Mode?"
-    ??? success "Answer"
-        Answer 1
-
-??? question "What Is Diffuse Mode?"
-    ??? success "Answer"
-        Answer 1
-
-??? question "What Is Focused Mode?"
-    ??? success "Answer"
-        Answer 1
-
-??? question "What Is Diffuse Mode?"
-    ??? success "Answer"
-        Answer 1
-??? question "What Is Focused Mode?"
-    ??? success "Answer"
-        Answer 1
-
-??? question "What Is Diffuse Mode?"
-    ??? success "Answer"
-        Answer 1
-
-??? question "What Is Focused Mode?"
-    ??? success "Answer"
-        Answer 1
-
-??? question "What Is Diffuse Mode?"
-    ??? success "Answer"
-        Answer 1
-</div>
 
 ## Renaissance Learning and Unlocking Your Potential
-
-<div class="grid" markdown>
-
-??? question "What Is Focused Mode?"
-    ??? success "Answer"
-        Answer 1
-
-??? question "What Is Diffuse Mode?"
-    ??? success "Answer"
-        Answer 1
-
-??? question "What Is Focused Mode?"
-    ??? success "Answer"
-        Answer 1
-
-??? question "What Is Diffuse Mode?"
-    ??? success "Answer"
-        Answer 1
-??? question "What Is Focused Mode?"
-    ??? success "Answer"
-        Answer 1
-
-??? question "What Is Diffuse Mode?"
-    ??? success "Answer"
-        Answer 1
-
-??? question "What Is Focused Mode?"
-    ??? success "Answer"
-        Answer 1
-
-??? question "What Is Diffuse Mode?"
-    ??? success "Answer"
-        Answer 1
-</div>

@@ -140,6 +140,7 @@ markdown_extensions:
 not_in_nav: |
   /tutorials/**/*.md
   /workshops/*.md
+  lhtl.md
 
 # Page tree
 nav:
