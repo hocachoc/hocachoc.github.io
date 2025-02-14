@@ -142,6 +142,8 @@ not_in_nav: |
 
 # Page tree
 nav:
-  - Flashcards: index.md
+  - Roadmap: index.md
+  - Library:
+    - library/linux.md
   - Blog:
     - blog/index.md

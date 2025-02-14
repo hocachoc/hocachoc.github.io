@@ -98,12 +98,11 @@ hide:
         Pomodoro là phương pháp quản lý thời gian, về cơ bản, Pomodoro kết hợp sử dụng chế độ Tập Trung và chế độ Lan Toả trong một khoảng thời gian ngắn, thường là 25 phút (chế độ Tập Trung) và 5 phút (chế độ Lan Toả). Sau mỗi 4 Pomodoro, bạn sẽ có một khoảng nghỉ dài hơn, khoảng 15-20 phút.
 
         Kỹ thuật Pomodoro có thể giúp bạn "chống lại" sự chần chừ vì:
-
-        * Chia nhỏ công việc: Thay vì phải đối mặt với một công việc lớn và phức tạp, Pomodoro chia nhỏ nó thành các phần nhỏ hơn, dễ quản lý hơn. Điều này giúp bạn cảm thấy ít "ngại" hơn khi bắt đầu và giảm nguy cơ bị "choáng ngợp" bởi công việc.
-        * Tạo động lực: Mỗi pomodoro là một "thử thách" nhỏ mà bạn có thể dễ dàng vượt qua. Khi hoàn thành mỗi pomodoro, bạn sẽ cảm thấy "thành công" và có thêm động lực để tiếp tục.
-        * Tăng cường sự tập trung: Thời gian làm việc ngắn (25 phút) giúp bạn tập trung cao độ vào công việc, tránh bị xao nhãng bởi những yếu tố bên ngoài.
-        * Giảm căng thẳng: Các khoảng nghỉ ngắn giúp bạn thư giãn, giảm căng thẳng và "làm mới" tinh thần. Điều này giúp bạn duy trì sự tập trung và năng suất làm việc trong suốt cả ngày.
-        * Tạo thói quen: Pomodoro giúp bạn tạo thói quen làm việc và nghỉ ngơi đều đặn, từ đó giúp bạn quản lý thời gian hiệu quả hơn và giảm thiểu sự chần chừ.
+        * **Chia nhỏ công việc**: Thay vì phải đối mặt với một công việc lớn và phức tạp, Pomodoro chia nhỏ nó thành các phần nhỏ hơn, dễ quản lý hơn. Điều này giúp bạn cảm thấy ít "ngại" hơn khi bắt đầu và giảm nguy cơ bị "choáng ngợp" bởi công việc.
+        * **Tạo động lực**: Mỗi pomodoro là một "thử thách" nhỏ mà bạn có thể dễ dàng vượt qua. Khi hoàn thành mỗi pomodoro, bạn sẽ cảm thấy "thành công" và có thêm động lực để tiếp tục.
+        * **Tăng cường sự tập trung**: Thời gian làm việc ngắn (25 phút) giúp bạn tập trung cao độ vào công việc, tránh bị xao nhãng bởi những yếu tố bên ngoài.
+        * **Giảm căng thẳng**: Các khoảng nghỉ ngắn giúp bạn thư giãn, giảm căng thẳng và "làm mới" tinh thần. Điều này giúp bạn duy trì sự tập trung và năng suất làm việc trong suốt cả ngày.
+        * **Tạo thói quen**: Pomodoro giúp bạn tạo thói quen làm việc và nghỉ ngơi đều đặn, từ đó giúp bạn quản lý thời gian hiệu quả hơn và giảm thiểu sự chần chừ.
 
         !!! example "Như "cây cà chua" chín đỏ"
             Pomodoro là "quả cà chua" chín đỏ, tượng trưng cho sự "tập trung" và "năng suất". Khi bạn "hái" được nhiều quả pomodoro, có nghĩa là bạn đã hoàn thành nhiều công việc một cách hiệu quả.
@@ -152,10 +151,9 @@ hide:
 ??? question "Tại sao Nhắc Lại Cách Quãng hiệu quả?"
     ??? success "Cố gắng nhớ lại trước khi xem đáp án"
         Nhắc lại cách quãng là một kỹ thuật học tập hiệu quả, dựa trên nguyên tắc "quên lãng" của não bộ. Thay vì "nhồi nhét" kiến thức trong một lần, bạn sẽ "chia nhỏ" quá trình học tập và "ôn lại" kiến thức theo những "khoảng thời gian" khác nhau.
-
-        * Tận dụng "quên lãng": Khi bạn ôn lại kiến thức ngay trước khi quên, não bộ sẽ "củng cố" lại trí nhớ và "chuyển" thông tin từ trí nhớ ngắn hạn sang trí nhớ dài hạn.
-        * Tiết kiệm thời gian: Thay vì phải "học lại" từ đầu, bạn chỉ cần "ôn lại" những điểm chính, giúp tiết kiệm thời gian và công sức.
-        * Tăng cường trí nhớ: Nhắc lại cách quãng giúp bạn "ghi nhớ" kiến thức lâu dài hơn, "sử dụng" chúng một cách linh hoạt và hiệu quả.
+        * **Tận dụng "quên lãng"**: Khi bạn ôn lại kiến thức ngay trước khi quên, não bộ sẽ "củng cố" lại trí nhớ và "chuyển" thông tin từ trí nhớ ngắn hạn sang trí nhớ dài hạn.
+        * **Tiết kiệm thời gian:** Thay vì phải "học lại" từ đầu, bạn chỉ cần "ôn lại" những điểm chính, giúp tiết kiệm thời gian và công sức.
+        * **Tăng cường trí nhớ**: Nhắc lại cách quãng giúp bạn "ghi nhớ" kiến thức lâu dài hơn, "sử dụng" chúng một cách linh hoạt và hiệu quả.
 
 ??? question "Não chúng ta sẽ làm gì khi chúng ta đang ngủ?"
     ??? success "Cố gắng nhớ lại trước khi xem đáp án"
@@ -203,9 +201,8 @@ hide:
         
 ??? question "Làm sao để hình thành một Chunk?"
     ??? success "Cố gắng nhớ lại trước khi xem đáp án"
-
-        1. Bước 1: tập trung toàn bộ sự chú ý của bạn vào những thông tin mà bạn muốn hình thành Chunk.
-        2. Bước 2: hiểu ý tưởng cơ bản mà bạn đang cố gắng hình thành Chunk, dù đó là hiểu một khái niệm hoặc một bản chất của một loại vấn đề toán học cụ thể.
+        1. **Bước 1**: tập trung toàn bộ sự chú ý của bạn vào những thông tin mà bạn muốn hình thành Chunk.
+        2. **Bước 2**: hiểu ý tưởng cơ bản mà bạn đang cố gắng hình thành Chunk, dù đó là hiểu một khái niệm hoặc một bản chất của một loại vấn đề toán học cụ thể.
 
             !!! notes "Tổng hợp ý chính"
                 Tìm ra ý tưởng chính của các ý tưởng
@@ -215,7 +212,7 @@ hide:
             !!! example "Nghe một bài hát không có nghĩa là bạn thực sự hát được bài đó."
 
             Chỉ vì bạn nhìn thấy nó, hay thậm chí là bạn hiểu nó, điếu đó không có nghĩa là bạn có thể thực sự làm được nó. Chỉ có tự bạn làm mới giúp tạo ra những mẫu thần kinh làm nền tảng cho sự tinh thông thực sự
-        3. Bước 3: kiếm được ngữ cảnh, để biết được khi nào sử dụng và khi nào không sử dụng cách giải quyết vấn đề.
+        3. **Bước 3**: kiếm được ngữ cảnh, để biết được khi nào sử dụng và khi nào không sử dụng cách giải quyết vấn đề.
 
             !!! notes "Lướt nhanh hai phút hình ảnh và mục lục một chương trước khi bắt đâu học để nắm được bức tranh toàn cảnh"
 
@@ -260,29 +257,54 @@ hide:
 
 ??? question "Acetylcholine?"
     ??? success "Cố gắng nhớ lại trước khi xem đáp án"
-
         1. Là chất dẫn truyền thần kinh ở cả hệ thống thần kinh trung ương và thần kinh ngoại vi.
         2. Là hormone nội tiết, được tổng hợp và tiết ra bởi các tế bào biểu mô phế quản đường thờ.
 
-        Acetylcholine đóng vai trò hình thành động lực, kích thích, sự chú ý, học tập và trí nhớ.
-
+        Acetylcholine đóng vai trò hình thành động lực, kích thích, sự chú ý, học tập và trí nhớ, và giấc ngủ REM (giai đoạn ngủ mơ) giai đoạn quan trọng cho việc củng cố trí nhớ và học tập.
         !!! example "Bệnh Alzheimer"
             Do suy giảm đường cholinergic nghiêm trọng trong thần kinh trung ương có liên quan khởi phát bệnh Ahzheimer.
         !!! example "Một số loại thuốc trừ sâu và khí tể"
             Thuốc và các chất làm gián đoạn chức ngăn Acetylcholine có thể có tác động tiêu cực đến cơ thể và thậm chí dẫn đến tử vong.
         !!! example "Nọc độc của nhện Goá phụ đen"
             Nọc độc của nhện góa phụ đen hoạt động bằng cách giải phóng acetylcholine. Khi bị cắn, nồng độ acetylcholine của nạn nhân tăng cao đột ngột, dẫn đến co thắt cơ, tê liệt và thậm chí tử vong.
+
+??? question "Tăng cường Acetylcholine một cách tự nhiên?"
+    ??? success "Cố gắng nhớ lại trước khi xem đáp án"
+        * **Chế độ ăn uống lành mạnh**: Ăn các thực phẩm giàu choline, một chất dinh dưỡng cần thiết để sản xuất acetylcholine, như trứng, thịt, cá, các loại đậu và rau xanh.
+        * **Tập thể dục thường xuyên**: Hoạt động thể chất giúp tăng cường sản xuất acetylcholine và cải thiện chức năng não bộ.
+        * **Ngủ đủ giấc**: Giấc ngủ giúp não bộ sản xuất acetylcholine và củng cố trí nhớ.
+        * **Học tập và thử thách bản thân**: Học tập những điều mới mẻ và thử thách bản thân trong các hoạt động trí óc giúp tăng cường sản xuất acetylcholine và cải thiện chức năng nhận thức.
 
 ??? question "Dopamine?"
     ??? success "Cố gắng nhớ lại trước khi xem đáp án"
+        Là chất dẫn truyền thần kinh quan trọng, đóng vai trò quan trọng trong nhiều chức năng của não bộ, bao gồm học tập.
 
-        !!! example "Bệnh Alzheimer"
-            Do suy giảm đường cholinergic nghiêm trọng trong thần kinh trung ương có liên quan khởi phát bệnh Ahzheimer.
-        !!! example "Một số loại thuốc trừ sâu và khí tể"
-            Thuốc và các chất làm gián đoạn chức ngăn Acetylcholine có thể có tác động tiêu cực đến cơ thể và thậm chí dẫn đến tử vong.
-        !!! example "Nọc độc của nhện Goá phụ đen"
-            Nọc độc của nhện góa phụ đen hoạt động bằng cách giải phóng acetylcholine. Khi bị cắn, nồng độ acetylcholine của nạn nhân tăng cao đột ngột, dẫn đến co thắt cơ, tê liệt và thậm chí tử vong.
+        Dopamine đóng vai trò quan trọng trong việc học tập, đặc biệt là học tập dựa trên phần thưởng. Khi chúng ta học được điều gì đó mới mẻ hoặc đạt được mục tiêu học tập, não bộ sẽ giải phóng dopamine, tạo ra cảm giác hạnh phúc và khoái cảm. Cảm giác này sẽ thúc đẩy chúng ta tiếp tục học tập và tìm kiếm những kiến thức mới.
 
+??? question "Tăng cường Dopamine một cách tự nhiên?"
+    ??? success "Cố gắng nhớ lại trước khi xem đáp án"
+        * **Đặt mục tiêu học tập cụ thể và đạt được chúng**: Khi bạn đạt được mục tiêu, não bộ sẽ giải phóng dopamine, tạo động lực cho bạn tiếp tục học tập.
+        * **Học tập theo nhóm hoặc tham gia các hoạt động học tập thú vị**: Học tập cùng với bạn bè hoặc tham gia các hoạt động học tập thú vị sẽ giúp bạn cảm thấy hứng thú và vui vẻ hơn, từ đó tăng cường dopamine.
+        * **Sử dụng các phương pháp học tập hiệu quả**: Khi bạn học tập hiệu quả, bạn sẽ cảm thấy tự tin và đạt được kết quả tốt hơn, từ đó tăng cường dopamine.
+        * **Ngủ đủ giấc và tập thể dục thường xuyên**: Giấc ngủ và tập thể dục giúp não bộ sản xuất dopamine một cách tự nhiên.      
+
+??? question "Serotonin?"
+    ??? success "Cố gắng nhớ lại trước khi xem đáp án"
+        Serotonin là một chất dẫn truyền thần kinh quan trọng, đóng vai trò then chốt trong việc điều chỉnh tâm trạng, giấc ngủ, sự thèm ăn, hỗ trợ tiêu hoá và đông máu.
+
+        Serotonin cũng có tác động đến cuộc sống xã hội.
+        !!! example "Khỉ đầu đàn có mức Serotonin cao nhất, những con khỉ ở thứ hạng thấp có mức Serotonin thấp nhất"
+
+        Serotonin cũng liên quan đến hành vi liều lĩnh.
+        !!! example "Những con khỉ với mức Serotonin thấp thường có nhiều hành vi liều lĩnh hơn nhưng con có mức Serotonin cao"
+        !!! example "Những tù nhân vì tội bạo lực thường có mức độ Serotonin thấp nhất trong xã hội"
+
+??? question "Tăng cường Serotonin một cách tự nhiên?"
+    ??? success "Cố gắng nhớ lại trước khi xem đáp án"
+        * **Tiếp xúc với ánh sáng mặt trời**: Ánh sáng mặt trời giúp cơ thể sản xuất serotonin. Hãy dành thời gian mỗi ngày để ra ngoài trời và tận hưởng ánh nắng.
+        * **Tập thể dục thường xuyên**: Hoạt động thể chất giúp tăng cường sản xuất serotonin và cải thiện tâm trạng.
+        * **Chế độ ăn uống lành mạnh**: Ăn các thực phẩm giàu tryptophan, một loại axit amin cần thiết để sản xuất serotonin, như thịt, cá, trứng, sữa, các loại hạt và đậu.
+        * **Thiền định và thư giãn**: Các kỹ thuật thư giãn như thiền định, yoga, hít thở sâu có thể giúp tăng cường serotonin và giảm căng thẳng.
 
 ??? question "Hội chứng Anhedonia?"
     ??? success "Cố gắng nhớ lại trước khi xem đáp án"
@@ -298,18 +320,18 @@ hide:
 
         Catatonia cũng có thể khởi phát nếu có sự bất thường trong cấu trúc và hoạt động của hệ thống dẫn truyền thần kinh glutamate, axit gamma-aminobutyric (GABA) và dopamine. 
 
-??? question "Điều gì thúc đẩy việc học của bạn?"
+??? question "Thư viện trí tuệ Chunks?"
     ??? success "Cố gắng nhớ lại trước khi xem đáp án"
-        Điều có thể làm cho thông tin in sâu một cách vững chắc vào tâm trí của bạn.
+        Về cơ bản, phương pháp để tăng cường kiến thức và kỹ năng, là xây dựng dần dần số lượng các Chunk ý tưởng trong đầu, các mảng thông tin quý giá mà người ta có thể kết nối với nhau theo các cách mới và sáng tạo.
 
-        * Acetylcholine
-            Tế bào thần kinh Acetylcholine tạo ra những kết nối điều biến thần kinh tới vỏ não, chúng đặc biệt quan trọng cho việc học tập trung, khi bạn đang rất chăm chú.
-        * Dopamine
-        * Serotonin
+        Thư viện trí tuệ phân theo Chunk của bạn càng lớn và càng được thực hành nhiều, bất kể bạn đang học môn gì, thì bạn sẽ càng có khả năng giải quyết vấn đề và tìm ra giải pháp. 
+        !!! example "Đại kỳ thủ cờ tướng có thể dễ dàng truy cập hàng ngàn cách đánh cờ khác nhau"
+        !!! example "Nhạc sĩ/nhà ngôn ngữ học/nhà khoa học có thể dễ dàng truy cập các Chunk kiến thức trong lĩnh vực của họ"
 
+??? question "Sự chuyển giao Chunk là gì?"
+    ??? success "Cố gắng nhớ lại trước khi xem đáp án"
+        Các Chunk cũng giúp bạn hiểu những khái niệm mới. Đó là vì khi bạn đã hiểu rõ một Chunk bạn sẽ thấy là Chunk đó có thể có quan hệ với các Chunk tương tự một cách bất ngờ, không chỉ trong cùng lĩnh vực, nhưng ở cả các lĩnh vực rất khác nhau.
         !!! example "Ví dụ"
-
-        
                  
 
 ??? question "Overlearning là gì?"
