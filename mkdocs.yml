@@ -144,8 +144,6 @@ not_in_nav: |
 # Page tree
 nav:
   - Flashcards: index.md
-  - Mini-Tests:
-    - mini-tests/lhtl.md
   - Blog:
     - blog/index.md
   
