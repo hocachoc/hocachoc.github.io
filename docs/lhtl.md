@@ -258,11 +258,52 @@ hide:
         Một mặt ghi câu hỏi và mặt kia ghi câu trả lời. Cố gắng nhớ lại trước khi xem đáp án. Sau đó kiểm tra nhớ lại với đáp án. 
         Lên lịch cách 1 ngày, 1 tuần , 1/3/6 tháng nhắc lại (Nhắc Lại Ngắt Quãng)
 
+??? question "Acetylcholine?"
+    ??? success "Cố gắng nhớ lại trước khi xem đáp án"
+
+        1. Là chất dẫn truyền thần kinh ở cả hệ thống thần kinh trung ương và thần kinh ngoại vi.
+        2. Là hormone nội tiết, được tổng hợp và tiết ra bởi các tế bào biểu mô phế quản đường thờ.
+
+        Acetylcholine đóng vai trò hình thành động lực, kích thích, sự chú ý, học tập và trí nhớ.
+
+        !!! example "Bệnh Alzheimer"
+            Do suy giảm đường cholinergic nghiêm trọng trong thần kinh trung ương có liên quan khởi phát bệnh Ahzheimer.
+        !!! example "Một số loại thuốc trừ sâu và khí tể"
+            Thuốc và các chất làm gián đoạn chức ngăn Acetylcholine có thể có tác động tiêu cực đến cơ thể và thậm chí dẫn đến tử vong.
+        !!! example "Nọc độc của nhện Goá phụ đen"
+            Nọc độc của nhện góa phụ đen hoạt động bằng cách giải phóng acetylcholine. Khi bị cắn, nồng độ acetylcholine của nạn nhân tăng cao đột ngột, dẫn đến co thắt cơ, tê liệt và thậm chí tử vong.
+
+??? question "Dopamine?"
+    ??? success "Cố gắng nhớ lại trước khi xem đáp án"
+
+        !!! example "Bệnh Alzheimer"
+            Do suy giảm đường cholinergic nghiêm trọng trong thần kinh trung ương có liên quan khởi phát bệnh Ahzheimer.
+        !!! example "Một số loại thuốc trừ sâu và khí tể"
+            Thuốc và các chất làm gián đoạn chức ngăn Acetylcholine có thể có tác động tiêu cực đến cơ thể và thậm chí dẫn đến tử vong.
+        !!! example "Nọc độc của nhện Goá phụ đen"
+            Nọc độc của nhện góa phụ đen hoạt động bằng cách giải phóng acetylcholine. Khi bị cắn, nồng độ acetylcholine của nạn nhân tăng cao đột ngột, dẫn đến co thắt cơ, tê liệt và thậm chí tử vong.
+
+
+??? question "Hội chứng Anhedonia?"
+    ??? success "Cố gắng nhớ lại trước khi xem đáp án"
+        Anhedonia là thuật ngữ dùng để mô tả sự mất hứng thú với cuộc sống, các hoạt động cá nhân từng yêu thích, đồng thời giảm khả năng cảm nhận niềm vui từ hoạt động hàng ngày. Anhedonia cũng là một trong những triệu chứng khá phổ biến, cốt lõi của bệnh rối loạn trầm cảm thể nặng.
+        
+        Anhedonia là một triệu chứng cốt lõi của bệnh trầm cảm và bệnh tâm thần phân liệt. Tuy nhiên, đôi khi cũng có một vài trường hợp bệnh nhân phải đối mặt với cơn đau mãn tính và bệnh Parkinson có liên quan đến Anhedonia. Bên cạnh đó, Anhedonia có thể xuất hiện do lạm dụng chất kích thích quá nhiề
+
+??? question "Hội chứng Catatonia?"
+    ??? success "Cố gắng nhớ lại trước khi xem đáp án"
+        Catatonia là một dạng rối loạn tâm thần ảnh hưởng trực tiếp đến chức năng vận động của người bệnh. Vấn đề sức khỏe này còn được biết đến với tên gọi thứ hai là hội chứng căng trương lực. 
+        
+        Bệnh xuất hiện theo cơn hoặc từng đợt. Nghiên cứu cho thấy thời gian kéo dài của mỗi đợt có thể từ vài giờ đến cả chục ngày.
+
+        Catatonia cũng có thể khởi phát nếu có sự bất thường trong cấu trúc và hoạt động của hệ thống dẫn truyền thần kinh glutamate, axit gamma-aminobutyric (GABA) và dopamine. 
+
 ??? question "Điều gì thúc đẩy việc học của bạn?"
     ??? success "Cố gắng nhớ lại trước khi xem đáp án"
         Điều có thể làm cho thông tin in sâu một cách vững chắc vào tâm trí của bạn.
 
         * Acetylcholine
+            Tế bào thần kinh Acetylcholine tạo ra những kết nối điều biến thần kinh tới vỏ não, chúng đặc biệt quan trọng cho việc học tập trung, khi bạn đang rất chăm chú.
         * Dopamine
         * Serotonin
 

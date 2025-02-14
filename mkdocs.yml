@@ -75,6 +75,7 @@ plugins:
       archive: false
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - mkdocs_quiz
   # - minify:
   #     minify_html: false
 
@@ -139,14 +140,16 @@ markdown_extensions:
 
 not_in_nav: |
   /tutorials/**/*.md
-  /workshops/*.md
   lhtl.md
 
 # Page tree
 nav:
   - Flashcards: index.md
+  - Mini-Tests:
+    - mini-tests/lhtl.md
   - Blog:
     - blog/index.md
+  
   # - Inspired: recalls/learning-how-to-learn.md
   # - Tutorials:
   #   - tutorials/index.md
