@@ -89,7 +89,6 @@ extra:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/chanvi
 
-
 # Extensions
 markdown_extensions:
   - abbr
@@ -146,17 +145,3 @@ nav:
   - Flashcards: index.md
   - Blog:
     - blog/index.md
-  
-  # - Inspired: recalls/learning-how-to-learn.md
-  # - Tutorials:
-  #   - tutorials/index.md
-  #   - OpenTofu: 
-  #     - tutorials/launching-a-linux-server-on-aws-with-opentofu.md
-  #     - tutorials/launching-a-linux-server-on-aws-with-opentofu.md
-  #   - Terraspace: 
-  #     - tutorials/launching-a-linux-server-on-aws-with-opentofu.md
-  #   - Ansible: 
-  #     - tutorials/launching-a-linux-server-on-aws-with-opentofu.md
-  #   - Packer: 
-  #     - tutorials/launching-a-linux-server-on-aws-with-opentofu.md
-
