@@ -75,7 +75,6 @@ plugins:
       archive: false
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
-  - mkdocs_quiz
   # - minify:
   #     minify_html: false
 
