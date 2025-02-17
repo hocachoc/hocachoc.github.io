@@ -331,14 +331,17 @@ hide:
 ??? question "Sự chuyển giao Chunk là gì?"
     ??? success "Cố gắng nhớ lại trước khi xem đáp án"
         Các Chunk cũng giúp bạn hiểu những khái niệm mới. Đó là vì khi bạn đã hiểu rõ một Chunk bạn sẽ thấy là Chunk đó có thể có quan hệ với các Chunk tương tự một cách bất ngờ, không chỉ trong cùng lĩnh vực, nhưng ở cả các lĩnh vực rất khác nhau.
-        !!! example "Ví dụ"
-                 
 
 ??? question "Overlearning là gì?"
     ??? success "Cố gắng nhớ lại trước khi xem đáp án"
-        Điều có thể làm cho thông tin in sâu một cách vững chắc vào tâm trí của bạn.
-        !!! example "Ví dụ"
-                 
+        Overlearning (học quá mức) là tiếp tục học hoặc thực hành sau khi bạn đã thành thạo những gì bạn có thể trong buổi học.
+        !!! example "TED experts thường tập 70 tiếng cho 20 phút nói"
+        Tuy nhiên, overlearning quá nhiều sẽ tốn thời gian bởi vì khi bạn đã hiểu rõ một vấn đề thì điều đó trở nên dễ dàng, nếu bạn cứ quanh quẩn làm việc dễ dàng thì bạn dễ bị rơi vào trạng thái Ảo Tưởng Năng Lực vì những việc dễ dàng.
+
+??? question "Deliberate Practice là gì?"
+    ??? success "Cố gắng nhớ lại trước khi xem đáp án"
+        Deliberate Practice (thực hành có chủ đích) là việc bạn tập trung vào những việc khó hơn.
+    
 
 </div>
 
