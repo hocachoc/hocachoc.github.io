@@ -315,7 +315,7 @@
             By default, the `split` command divides the file into smaller files of 1000 lines each. If no input file is provided, or if it is given as `-`, it reads from standard input.
         !!! example "split -l 500 bigfile.txt"
             Split a file named `bigfile.txt `into files of 500 lines each.
-    ??? question "paste"
+    ??? question "join"
         `join` to combine lines of two files on a common field.
         ```bash
         join [filename_first] [filename_second]
@@ -544,17 +544,262 @@
         ```
         These commands, `bg` and `fg` are part of job control in Unix-like operating systems, which lets you manage multiple tasks simultaneously from a single terminal
     ??? question "Listing / Finding Processes"
+        The proc filesystem is an extremely powerful tool in this respect. Available in all Unix-like operating systems, proc is a virtual file system that provides detailed information about running processes, including its PID, status, and resource consumption.
 
+        With commands like ps, top, and htop, we can quickly list out the running processes on the Linux system. Specifically, the ps command offers an in-depth snapshot of currently running processes, whereas top and htop give real-time views of system performance.
+        !!! question "ps -ef"
+            List all runningj processes.
+        !!! question "top"
+            Display ongoing list of running processes.
+        !!! question "htop"
+            `top` alternatively, for a more user-friendly interface.
+        Exploring the proc directory (/proc), we dive even deeper, enabling us to view the system’s kernel parameters and each process’s specific system details.
+        !!! question "cat /proc/{PID}/status"
+            View specifics of a particular PID
     ??? question "Process Signals"
-
+        Process signals are a form of communication mechanism in Unix and Linux systems. They provide a means to notify a process of synchronous or asynchronous events. There are a variety of signals like SIGINT, SIGSTOP, SIGKILL, etc. available which can be sent to a running process to interrupt, pause or terminate it.
+        !!! example "kill -SIGSTOP {PID}"
+            Send a SIGSTOP signal to a process with a PID. This will suspend the execution of the process until a SIGCONT signal is received.
     ??? question "Process Priorities"
+        In the Linux environment, every running task or essentially a “process” is assigned a certain priority level that impacts its execution timing. These priorities are instrumental in efficient system resource utilization, enabling Linux to fine-tune execution and allocate system resources smartly.
 
+        The Linux kernel sorts processes in the proc structure, typically found under the `/proc` file system directory. This structure contains information about all active processes, including their priorities. The concept of proc priorities under process management refers to the priority accorded to each process by the system. This priority value (also known as “nice” value) ranges from -20 (highest priority) to +19 (lowest priority).
+
+        By understanding and managing proc priorities, you can optimize system performance and control which processes receive more or less of the CPU’s attention.
+        !!! example "View all PIDs with Priorities and Users"
+            Display the process ID, priority, and user for all processes.
+            ```bash title="ps -eo pid,pri,user"
+            PID   PRI USER
+            1     19  root
+            2     19  root
+            ...   ... ...
+            4488  19  chanvi
+            ```
+        !!! example "Change priority of a PID"
+            ```bash
+            renice [nice_value] [option] [PID]
+            ```
+            !!! example "Increase priority by 5 units for process ID 4488"
+                ```bash title="ps -eo pid,pri,user"
+                PID   PRI USER
+                1     19  root
+                2     19  root
+                ...   ... ...
+                4488  19  chanvi
+                ```
+                ```bash title="renice -5 -p 4488"
+                4488 (process ID) old priority 0, new priority -5
+                ```
+                ```bash title="ps -eo pid,pri,user"
+                PID   PRI USER
+                1     19  root
+                2     19  root
+                ...   ... ...
+                4488  24  chanvi
+                ```
     ??? question "Killing Processes"
+        On any Linux system, whether you’re on a server or a desktop system, processes are consistently running. Sometimes, these processes may not behave as expected due to certain reasons like system bugs, unexpected system behavior, or accidental initiation and may require termination. This is where the concept of killing processes in Linux comes to picture under the area of process management.
 
+        `kill` in Linux is a built-in command that is used to terminate processes manually. You can use the `kill` command to send a specific signal to a process. When we use the `kill` command, we basically request a process to stop, pause, or terminate
+        ```bash
+        kill [signal or option] PID(s)
+        ```
+        > In practice, you would identify the Process ID (PID) of the process you want to terminate and replace PID(s) in the above command. The signal or option part is optional, but very powerful allowing for specific termination actions.
     ??? question "Process Forking"
+        Process forking is a fundamental concept under process management in Linux systems. The term refers to the mechanism where a running process (parent process) can generate a copy of itself (child process), enabling concurrent execution of both processes. This is facilitated by the ‘fork’ system call. It is a prominent aspect in understanding the creation and control of processes in a Linux environment.
 
+        The child process created by fork is a nearly perfect copy of the parent process with exception to just a few values including the process ID and parent process ID. Any changes made in the child process does not affect the parent process, and vice versa.
+
+        ```C title="Basic code snippet of proc forking in C"
+        #include<sys/types.h>
+        #include<unistd.h>
+        #include<stdio.h>
+
+        int main()
+        {
+            pid_t child_pid;
+
+            // Try creating a child process
+            child_pid = fork();
+
+            // If a child is successfully created
+            if(child_pid >= 0)
+            printf("Child created with PID: %d\n", child_pid);
+            else
+            printf("Fork failed\n");
+            return 0;
+        }
+        ```
+        > In this snippet, `fork()` is used to created a new child process. If the process creation is successful, `fork()` returns the process ID of the child process. If unsuccessful, it returns a negative value.
 ??? abstract "User Management"
+    ??? question "Create/Delete/Update Users"
+        ```bash title="Create new users"
+        useradd [username] # (1)!
+        ```
+        
+        1. Alternative, `adduser [username]`
+
+        ```bash title="Update user's details (home dir or login shell)"
+        usermod
+        ```
+        ```bash title="Delete users"
+        userdel [username]
+        ```
+    ??? question "Users and Groups"
+        User management in Linux uses user groups to manage system users and permissions efficiently. A user group is a collection of users that simplifies system administration by determining access rights to resources like files and directories. Each user belongs to one or more groups, allowing administrators to grant specific privileges without full superuser access. 
+        ```bash title="groupadd"
+        groupadd
+        ```
+        ```bash title="groupmod"
+        groupmod
+        ```
+        ```bash title="groupdel"
+        groupdel
+        ```        
+        ```bash title="usermod"
+        usermod
+        ```    
+        ```bash title="gpasswd"
+        gpasswd
+        ```    
+    ??? question "Managing Permissions"
+        User management in Linux involves managing permissions to control who can access, modify, and execute files and directories. Permissions are categorized into read, write, and execute types and can be set for the file owner (user), the owning group, and others.
+        ```bash title="chmod"
+        chmod
+        ```        
+        ```bash title="chown"
+        chown
+        ```    
+        ```bash title="chgrp"
+        chgrp
+        ```    
 ??? abstract "Service Management(systemd)"
+    ??? question "Checking Service Status"
+        ```bash
+        systemctl status [service_name]
+        ```
+        !!! example "Check PostgreSQL status"
+            ```bash title="systemctl status postgresql"
+            ● postgresql.service - PostgreSQL RDBMS
+                Loaded: loaded (/usr/lib/systemd/system/postgresql.service; enabled; preset: enabled)
+                Active: active (exited) since Tue 2025-02-25 08:49:01 +07; 2h 57min ago
+            Main PID: 2535 (code=exited, status=0/SUCCESS)
+                    CPU: 726us
+
+            Feb 25 08:49:01 chanvi-Dell-G15-5520 systemd[1]: Starting postgresql.service - PostgreSQL RDBMS...
+            Feb 25 08:49:01 chanvi-Dell-G15-5520 systemd[1]: Finished postgresql.service - PostgreSQL RDBMS.
+            ```
+    ??? question "Start/Stop Services"
+        ```bash
+        systemctl [stop|start|restart] [service_name]
+        ```
+        !!! example "Stop a service"
+            ```bash title="systemctl stop postgresql"
+            ```
+            ```bash title="systemctl status postgresql"
+            ○ postgresql.service - PostgreSQL RDBMS
+                Loaded: loaded (/usr/lib/systemd/system/postgresql.service; enabled; preset: enabled)
+                Active: inactive (dead) since Tue 2025-02-25 14:23:09 +07; 5s ago
+            Duration: 16.311s
+                Process: 59550 ExecStart=/bin/true (code=exited, status=0/SUCCESS)
+            Main PID: 59550 (code=exited, status=0/SUCCESS)
+                    CPU: 2ms
+
+            Feb 25 14:22:53 chanvi-Dell-G15-5520 systemd[1]: Starting postgresql.service - PostgreSQL RDBMS...
+            Feb 25 14:22:53 chanvi-Dell-G15-5520 systemd[1]: Finished postgresql.service - PostgreSQL RDBMS.
+            Feb 25 14:23:09 chanvi-Dell-G15-5520 systemd[1]: postgresql.service: Deactivated successfully.
+            Feb 25 14:23:09 chanvi-Dell-G15-5520 systemd[1]: Stopped postgresql.service - PostgreSQL RDBMS.
+            ```
+        !!! example "Start a service"
+            ```bash title="systemctl start postgresql"
+            ```
+            ```bash title="systemctl status postgresql"
+            ● postgresql.service - PostgreSQL RDBMS
+                Loaded: loaded (/usr/lib/systemd/system/postgresql.service; enabled; preset: enabled)
+                Active: active (exited) since Tue 2025-02-25 14:25:53 +07; 2s ago
+                Process: 60645 ExecStart=/bin/true (code=exited, status=0/SUCCESS)
+            Main PID: 60645 (code=exited, status=0/SUCCESS)
+                    CPU: 1ms
+
+            Feb 25 14:25:53 chanvi-Dell-G15-5520 systemd[1]: Starting postgresql.service - PostgreSQL RDBMS...
+            Feb 25 14:25:53 chanvi-Dell-G15-5520 systemd[1]: Finished postgresql.service - PostgreSQL RDBMS.
+            ```
+        !!! example "Restart a service"
+            ```bash title="systemctl restart postgresql"
+            ```
+            ```bash title="systemctl status postgresql"
+            ● postgresql.service - PostgreSQL RDBMS
+                Loaded: loaded (/usr/lib/systemd/system/postgresql.service; enabled; preset: enabled)
+                Active: active (exited) since Tue 2025-02-25 14:29:02 +07; 3s ago
+                Process: 63540 ExecStart=/bin/true (code=exited, status=0/SUCCESS)
+            Main PID: 63540 (code=exited, status=0/SUCCESS)
+                    CPU: 2ms
+
+            Feb 25 14:29:02 chanvi-Dell-G15-5520 systemd[1]: Starting postgresql.service - PostgreSQL RDBMS...
+            Feb 25 14:29:02 chanvi-Dell-G15-5520 systemd[1]: Finished postgresql.service - PostgreSQL RDBMS.
+            ```   
+    ??? question "Checking Service Logs"
+        Several essential logs generated by system processes, users and administrator actions can be found in `/var/log` directory. Logs can be accessed and viewed using several commands. For example, the `dmesg` command can be used to display the kernel ring buffer. Most system logs are managed by `systemd` and can be checked using the command `journalctl`.
+        ```bash
+        journalctl
+        ```
+        > This command will show the entire system log from the boot to the moment you’re calling the journal.
+        ```bash
+        journalct -u [service_name]
+        ```
+        > To display logs for a specific service, the `-u` option can be used followed by the service’s name.
+        !!! example "Display logs for PosgreSQL"
+        ```bash title="journalctl -u postgresql"
+        Feb 03 18:03:25 chanvi-Dell-G15-5520 systemd[1]: postgresql.service: Deactivated successfully.
+        Feb 03 18:03:25 chanvi-Dell-G15-5520 systemd[1]: Stopped postgresql.service - PostgreSQL RDBMS.
+        -- Boot 7e4d6dedb3a84472a4c09dc86fffce33 --
+        Feb 03 19:43:29 chanvi-Dell-G15-5520 systemd[1]: Starting postgresql.service - PostgreSQL RDBMS...
+        Feb 03 19:43:29 chanvi-Dell-G15-5520 systemd[1]: Finished postgresql.service - PostgreSQL RDBMS.
+        Feb 03 20:06:34 chanvi-Dell-G15-5520 systemd[1]: postgresql.service: Deactivated successfully.
+        Feb 03 20:06:34 chanvi-Dell-G15-5520 systemd[1]: Stopped postgresql.service - PostgreSQL RDBMS.
+        -- Boot 17f7b7cf745a497e8995273fa628f802 --
+        Feb 04 08:39:12 chanvi-Dell-G15-5520 systemd[1]: Starting postgresql.service - PostgreSQL RDBMS...
+        Feb 04 08:39:12 chanvi-Dell-G15-5520 systemd[1]: Finished postgresql.service - PostgreSQL RDBMS.
+        Feb 04 17:57:34 chanvi-Dell-G15-5520 systemd[1]: postgresql.service: Deactivated successfully.
+        Feb 04 17:57:34 chanvi-Dell-G15-5520 systemd[1]: Stopped postgresql.service - PostgreSQL RDBMS.
+        ...
+        -- Boot 84636cdedf26420e8bb1b2170ee71809 --
+        Feb 25 08:49:01 chanvi-Dell-G15-5520 systemd[1]: Starting postgresql.service - PostgreSQL RDBMS...
+        Feb 25 08:49:01 chanvi-Dell-G15-5520 systemd[1]: Finished postgresql.service - PostgreSQL RDBMS.
+        Feb 25 14:21:06 chanvi-Dell-G15-5520 systemd[1]: postgresql.service: Deactivated successfully.
+        Feb 25 14:21:06 chanvi-Dell-G15-5520 systemd[1]: Stopped postgresql.service - PostgreSQL RDBMS.
+        Feb 25 14:22:12 chanvi-Dell-G15-5520 systemd[1]: Starting postgresql.service - PostgreSQL RDBMS...
+        Feb 25 14:22:12 chanvi-Dell-G15-5520 systemd[1]: Finished postgresql.service - PostgreSQL RDBMS.
+        Feb 25 14:22:50 chanvi-Dell-G15-5520 systemd[1]: postgresql.service: Deactivated successfully.
+        Feb 25 14:22:50 chanvi-Dell-G15-5520 systemd[1]: Stopped postgresql.service - PostgreSQL RDBMS.
+        Feb 25 14:22:50 chanvi-Dell-G15-5520 systemd[1]: Stopping postgresql.service - PostgreSQL RDBMS...
+        Feb 25 14:22:53 chanvi-Dell-G15-5520 systemd[1]: Starting postgresql.service - PostgreSQL RDBMS...
+        Feb 25 14:22:53 chanvi-Dell-G15-5520 systemd[1]: Finished postgresql.service - PostgreSQL RDBMS.
+        Feb 25 14:23:09 chanvi-Dell-G15-5520 systemd[1]: postgresql.service: Deactivated successfully.
+        Feb 25 14:23:09 chanvi-Dell-G15-5520 systemd[1]: Stopped postgresql.service - PostgreSQL RDBMS.
+        Feb 25 14:25:53 chanvi-Dell-G15-5520 systemd[1]: Starting postgresql.service - PostgreSQL RDBMS...
+        Feb 25 14:25:53 chanvi-Dell-G15-5520 systemd[1]: Finished postgresql.service - PostgreSQL RDBMS.
+        Feb 25 14:28:59 chanvi-Dell-G15-5520 systemd[1]: postgresql.service: Deactivated successfully.
+        Feb 25 14:28:59 chanvi-Dell-G15-5520 systemd[1]: Stopped postgresql.service - PostgreSQL RDBMS.
+        Feb 25 14:28:59 chanvi-Dell-G15-5520 systemd[1]: Stopping postgresql.service - PostgreSQL RDBMS...
+        Feb 25 14:29:02 chanvi-Dell-G15-5520 systemd[1]: Starting postgresql.service - PostgreSQL RDBMS...
+        Feb 25 14:29:02 chanvi-Dell-G15-5520 systemd[1]: Finished postgresql.service - PostgreSQL RDBMS.
+        lines 159-176/176 (END)
+        ```
+    ??? question "Creating New Services"
+        ```bash title="`my_service.service` file"
+        [Unit]
+        Description=My Custom Service
+        After=network.target
+
+        [Service]
+        ExecStart=/path/to/your/executable
+
+        [Install]
+        WantedBy=multi-user.target
+        ```
+        This service file can be placed under `/etc/systemd/system/ `to make systemd recognize it. You would then control the service using `systemctl`, systemd’s command too
+        > Note that best practices in Linux dictate that we should not run services as root whenever possible, for security reasons. Instead, we should create a new user to run the service.
 ??? abstract "Package Management"
 ??? abstract "Linux Disks Filesystems"
 ??? abstract "Booting Linux"
