@@ -801,11 +801,275 @@
         This service file can be placed under `/etc/systemd/system/ `to make systemd recognize it. You would then control the service using `systemctl`, systemd’s command too
         > Note that best practices in Linux dictate that we should not run services as root whenever possible, for security reasons. Instead, we should create a new user to run the service.
 ??? abstract "Package Management"
+    Linux distributions use various package managers. Some of the commonly used are `apt` (Advanced Packaging Tool) for Debian-based distributions, `yum` (Yellowdog Updater, Modified) and `dnf` (Dandified YUM) for Red-Hat-based distributions, and `pacman` for Arch Linux.
+    ??? question "Package Repositories"
+        A repository in Linux is a storage location from where the system retrieves and installs the necessary OS updates and applications. These repositories contain thousands of Software Packages or RPM Packages compiled for specific Linux distributions.
+
+        The specific repository used depends on the Linux distribution (like Ubuntu, Fedora, etc.) and the package format the distribution uses (like .deb in Debian and Ubuntu or .rpm in Fedora and CentOS).
+
+        Repositories provide a method of updating the tools and applications on your Linux system, and they also ensure all updates and dependencies work together and are tested for integration before they are released.
+
+        There is no standard way to use the repositories across various distributions, each comes with its pre-configured set of repositories.
+        ```bash title="Update the repository in Ubuntu"
+        sudo apt update
+        ```
+        ```bash title="Update the repository in CentOS/RHEL/Fedora"
+        sudo yum update
+        ```
+        ```bash title="Update the repository in Racket"
+        raco pkg update
+        ```
+    ??? question "Snap"
+        Snap is a modern approach to package management in Linux systems promoted by Canonical (the company behind Ubuntu). Unlike traditional package management systems such as dpkg or RPM, Snap focuses on providing software as self-contained packages (known as ‘Snaps’) that include all of their dependencies. This ensures that a Snap application runs consistently across a variety of different Linux distributions.
+
+        Snaps are installed from a Snapcraft store and are automatically updated in the background. The Snap update process is transactional, meaning if something goes wrong during an update, Snap can automatically revert to the previous working version.
+        ```bash title="Example of a snap command"
+        sudo snap install [package_name]
+        ```
+    ??? question "Finding and Installing Packages"
+        ```bash title="Install a new package on a Debian-based system like Ubuntu"
+        sudo [apt | apt-get] update
+        sudo [apt | apt-get] install [package_name]
+        ```
+        ```bash title="Install a new package on a Fedora/RHEL/CentOS"
+        sudo [dnf | yum] update
+        sudo [dnf | yum] install [package_name]
+        ```
+    ??? question "Listing Installed Packages"
+        ```bash title="Listing installed packages in an `apt` package manager"
+        sudo apt list --installed
+        ```
+        ```bash title="Listing installed packages for `dnf` package manager"
+        dnf list installed
+        ```
+    ??? question "Install/Remove/Upgrade Packages"
+        ```bash title="Remove a package"
+        ```
+        ```bash title="Update a package"
+        ```
 ??? abstract "Linux Disks Filesystems"
+    Linux uses a variety of filesystems to allow us to store and retrieve data from the hardware of a computer system such as disks. The filesystem defines how data is organized, stored, and retrieved on these storage devices. Examples of popular Linux filesystems include EXT4, FAT32, NTFS, and Btrfs.
+
+    Each filesystem has its own advantages, disadvantages, and use cases. For example, EXT4 is typically used for Linux system volumes due to its robustness and compatibility with Linux, while FAT32 may be used for removable media like USB drives for its compatibility with almost all operating systems.
+    !!! example "View the Filesystem type"
+        ```bash title="df -T"
+        Filesystem      Type     1K-blocks    Used Available Use% Mounted on
+        udev            devtmpfs    986480       0    986480   0% /dev
+        tmpfs           tmpfs       199404     412    198992   1% /run
+        /dev/nvme0n1p1  ext4      51359360 8744592  40424004  18% /
+        tmpfs           tmpfs       997000       0    997000   0% /dev/shm
+        tmpfs           tmpfs         5120       0      5120   0% /run/lock
+        /dev/nvme0n1p15 vfat        126678   10922    115756   9% /boot/efi
+        tmpfs           tmpfs       199400       0    199400   0% /run/user/0
+        ```
+    ??? question "Inodes"
+        In a Linux filesystem, an inode (index node) is a core concept that represents a filesystem object such as a file or a directory. More specifically, an inode is a data structure that stores critical information about a file except its name and actual data. This information includes the file’s size, owner, access permissions, access times, and more.
+        
+        Every file or directory in a Linux filesystem has a unique inode, and each inode is identified by an inode number within its own filesystem. This inode number provides a way of tracking each file, acting as a unique identifier for the Linux operating system.
+
+        Whenever a file is created in Linux, it is automatically assigned an inode that stores its metadata. The structure and storage of inodes are handled by the filesystem, which means the kind and amount of metadata in an inode can differ between filesystems.
+        !!! example "Retrieve the inode of files/dirs"
+        ```bash title="ls -i"
+        17859963 directory  17855518 file1.txt  17856147 file2.txt  17845502 file.txt  17831913 sorted_file.txt  17830444 stderr.txt  17827405 stdout.txt
+        ```
+        ```bash title="ls -i file.txt"
+        17845502 file.txt
+        ```
+    ??? question "Filesystems"
+        Linux supports various types of filesystems, such as EXT4, XFS, BTRFS, etc. Each one of them has their own advantages regarding performance, data integrity and recovery options.
+        !!! example "View the Filesystem type"
+            ```bash title="df -T"
+            Filesystem      Type     1K-blocks    Used Available Use% Mounted on
+            udev            devtmpfs    986480       0    986480   0% /dev
+            tmpfs           tmpfs       199404     412    198992   1% /run
+            /dev/nvme0n1p1  ext4      51359360 8744592  40424004  18% /
+            tmpfs           tmpfs       997000       0    997000   0% /dev/shm
+            tmpfs           tmpfs         5120       0      5120   0% /run/lock
+            /dev/nvme0n1p15 vfat        126678   10922    115756   9% /boot/efi
+            tmpfs           tmpfs       199400       0    199400   0% /run/user/0
+            ```
+    ??? question "Mounts"
+        In Linux environments, a very crucial concept related to disk management is the “mounting” of filesystems. Fundamentally, mounting in Linux refers to the process that allows the operating system to access data stored on underlying storage devices, such as hard drives or SSDs. This process attaches a filesystem (available on some storage medium) to a specific directory (also known as a mount point) in the Linux directory tree.
+
+        The beauty of this approach lies in the unified and seamless manner in which Linux treats all files, irrespective of whether they reside on a local disk, network location, or any other kind of storage device.
+
+        The `mount` command in Linux is used for mounting filesystems. When a specific filesystem is ‘mounted’ at a particular directory, the system can begin reading data from the device and interpreting it according to the filesystem’s rules.
+
+        It’s worth noting that Linux has a special directory, `/mnt`, that is conventionally used as a temporary mount point for manual mounting and unmounting operations.
+        ```bash title="Mount the second partition of a second hard drive at the `/mnt` directory"
+        mount /dev/sdb1 /mnt
+        ```
+    ??? question "Adding Disks"
+        !!! note "List all block devices (disk and partitions)."
+            ```bash title="lsblk" hl_lines="2"
+            NAME                        MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINTS  
+            sda                           8:0    1 119.2G  0 disk  
+            nvme0n1                     259:0    0 476.9G  0 disk  
+            ├─nvme0n1p1                 259:1    0     1G  0 part  /boot/efi
+            ├─nvme0n1p2                 259:2    0     2G  0 part  /boot
+            └─nvme0n1p3                 259:3    0 473.9G  0 part  
+            └─dm_crypt-0              252:0    0 473.9G  0 crypt 
+                └─ubuntu--vg-ubuntu--lv 252:1    0 473.9G  0 lvm   /
+            ```
+        !!! note "Create a new partition on a disk."
+            ```bash title="sudo fdisk /dev/sda" hl_lines="5 9-12 16 28"
+            Welcome to fdisk (util-linux 2.39.3).
+            Changes will remain in memory only, until you decide to write them.
+            Be careful before using the write command.
+
+            Command (m for help): n
+            Partition type
+            p   primary (0 primary, 0 extended, 4 free)
+            e   extended (container for logical partitions)
+            Select (default p): p
+            Partition number (1-4, default 1): 1
+            First sector (2048-250068991, default 2048): 
+            Last sector, +/-sectors or +/-size{K,M,G,T,P} (2048-250068991, default 250068991): 
+
+            Created a new partition 1 of type 'Linux' and of size 119.2 GiB.
+
+            Command (m for help): p
+            Disk /dev/sda: 119.24 GiB, 128035323904 bytes, 250068992 sectors
+            Disk model: USB Flash Drive 
+            Units: sectors of 1 * 512 = 512 bytes
+            Sector size (logical/physical): 512 bytes / 512 bytes
+            I/O size (minimum/optimal): 512 bytes / 512 bytes
+            Disklabel type: dos
+            Disk identifier: 0xbf31f41c
+
+            Device     Boot Start       End   Sectors   Size Id Type
+            /dev/sda1        2048 250068991 250066944 119.2G 83 Linux
+
+            Command (m for help): w
+            The partition table has been altered.
+            Calling ioctl() to re-read partition table.
+            Syncing disks.
+            ```
+            ```bash title="lsblk" hl_lines="3"
+            NAME                        MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINTS  
+            sda                           8:0    1 119.2G  0 disk  
+            └─sda1                        8:1    1 119.2G  0 part  
+            nvme0n1                     259:0    0 476.9G  0 disk  
+            ├─nvme0n1p1                 259:1    0     1G  0 part  /boot/efi
+            ├─nvme0n1p2                 259:2    0     2G  0 part  /boot
+            └─nvme0n1p3                 259:3    0 473.9G  0 part  
+            └─dm_crypt-0              252:0    0 473.9G  0 crypt 
+                └─ubuntu--vg-ubuntu--lv 252:1    0 473.9G  0 lvm   /
+            ```
+        !!! note "Create a new filesystem on a partition." 
+            ```bash title="sudo mkfs.ext4 /dev/sda1" hl_lines="8-11"
+            mke2fs 1.47.0 (5-Feb-2023)
+            Creating filesystem with 31258368 4k blocks and 7815168 inodes
+            Filesystem UUID: 7dba2cd1-a61f-4139-adb2-a3c21df3abd0
+            Superblock backups stored on blocks: 
+                    32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+                    4096000, 7962624, 11239424, 20480000, 23887872
+
+            Allocating group tables: done                            
+            Writing inode tables: done                            
+            Creating journal (131072 blocks): done
+            Writing superblocks and filesystem accounting information: done
+            ```
+        !!! note "Mount a filesystem to a directory."
+            ```bash title="sudo mount /dev/sda1 /mnt"
+            ```
+            ```bash title="lsblk" hl_lines="3"
+            NAME                        MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINTS  
+            sda                           8:0    1 119.2G  0 disk  
+            └─sda1                        8:1    1 119.2G  0 part  /mnt
+            nvme0n1                     259:0    0 476.9G  0 disk  
+            ├─nvme0n1p1                 259:1    0     1G  0 part  /boot/efi
+            ├─nvme0n1p2                 259:2    0     2G  0 part  /boot
+            └─nvme0n1p3                 259:3    0 473.9G  0 part  
+            └─dm_crypt-0              252:0    0 473.9G  0 crypt 
+                └─ubuntu--vg-ubuntu--lv 252:1    0 473.9G  0 lvm   /
+            ```
+            ```bash title="df -T" hl_lines="9"
+            Filesystem      Type     1K-blocks    Used Available Use% Mounted on
+            udev            devtmpfs    986480       0    986480   0% /dev
+            tmpfs           tmpfs       199404     412    198992   1% /run
+            /dev/nvme0n1p1  ext4      51359360 8744592  40424004  18% /
+            tmpfs           tmpfs       997000       0    997000   0% /dev/shm
+            tmpfs           tmpfs         5120       0      5120   0% /run/lock
+            /dev/nvme0n1p15 vfat        126678   10922    115756   9% /boot/efi
+            tmpfs           tmpfs       199400       0    199400   0% /run/user/0
+            /dev/sda1       ext4     122485360      24 116217280   1% /mnt
+            ```
+    ??? question "Swap"
+        Swap space in Linux is used when the amount of physical memory (RAM) is full. If the system needs more memory resources and the physical memory is full, inactive pages in memory are moved to the swap space. Swap space is a portion of a hard disk drive (HDD) that is used for virtual memory.
+
+        Having swap space ensures that whenever your system runs low on physical memory, it can move some of the data to the swap, freeing up RAM space, but this comes with performance implications as disk-based storage is slower than RAM.
+
+        In the context of disks and filesystems, the swap space can live in two places:
+
+        1. In its own dedicated partition.
+        2. In a regular file within an existing filesystem.
+
+        ```bash
+        fallocate -l 1G /swapfile # creates a swap file
+        chmod 600 /swapfile # secures the swap file by preventing regular users from reading it
+        mkswap /swapfile # sets up the Linux swap area
+        swapon /swapfile # enables the file for swapping
+        ```
+    ??? question "LVM"
+        The Linux Logical Volume Manager (LVM) is a device mapper framework that provides logical volume management for the Linux kernel. It was created to ease disk management, allowing for the use of abstracted storage devices, known as logical volumes, instead of using physical storage devices directly.
+
+        LVM is extremely flexible, and features include resizing volumes, mirroring volumes across multiple physical disks, and moving volumes between disks without needing to power down.
+
+        LVM works on 3 levels: Physical Volumes (PVs), Volume Groups (VGs), and Logical Volumes (LVs).
+
+        1. PVs are the actual disks or partitions.
+        2. VGs combine PVs into a single storage pool.
+        3. LVs carve out portions from the VG to be used by the system.
+
+        ```bash title="create an LVM"
+        pvcreate /dev/sdb1
+        vgcreate my-vg /dev/sdb1
+        lvcreate -L 10G my-vg -n my-lv
+        ```
 ??? abstract "Booting Linux"
+    The whole process involves several stages including POST (Power-On Self Test), MBR (Master Boot Record), GRUB (GRand Unified Bootloader), Kernel, Init process, and finally the GUI or command line interface where users interact.
+
+    During this process, vital system checks are executed, hardware is detected, appropriate drivers are loaded, filesystems are mounted, necessary system processes are started, and finally, the user is presented with a login prompt.
+    ```bash title="example of the GRUB configuration file `/etc/default/grub`"
+    GRUB_DEFAULT=0
+    GRUB_TIMEOUT=5
+    GRUB_DISTRIBUTOR=`lsb_release -i -s 2> /dev/null || echo Debian`
+    GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
+    GRUB_CMDLINE_LINUX=""
+    ```
+    ??? question "Boot Loaders"
+    ??? question "Logs"
 ??? abstract "Networking"
+    ??? question "TCP/IP Stack"
+    ??? question "Subnetting"
+    ??? question "Ethernet & ARP/RARP"
+    ??? question "DHCP"
+    ??? question "IP Routing"
+    ??? question "DNS Resolution"
+    ??? question "Netfilter"
+    ??? question "SSH"
+    ??? question "File Transfer"
 ??? abstract "Backup Tools"
+    ??? question "rsync"
+    ??? question "tar"
+    ??? question "dump"
+    ??? question "restore"
 ??? abstract "Shell Programming"
+    ??? question "Variables"
+    ??? question "Literals"
+    ??? question "Loops"
+    ??? question "Conditionals"
+    ??? question "Debugging"
 ??? abstract "Troubleshooting"
+    ??? question "ping"
+    ??? question "ICMP"
+    ??? question "traceroute"
+    ??? question "netstat"
+    ??? question "Packet Analysis"
 ??? abstract "Containerization"
+    ??? question "ulimits"
+    ??? question "cgroups"
+    ??? question "Container Runtime"
+    ??? question "Docker"
 </div>
