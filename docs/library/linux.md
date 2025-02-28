@@ -1268,20 +1268,152 @@
         ```
 ??? abstract "Backup Tools"
     ??? question "rsync"
+        ```bash title="Create a backup by synchronizing the source directory with the destination directory"
+        rsync -avz /source_dir/ /destination_dir/ # (1)!
+        ```
+
+        1. `-a` (archive mode), `-v` (verbose), and `-z` (compress data).
     ??? question "tar"
     ??? question "dump"
     ??? question "restore"
 ??? abstract "Shell Programming"
-    ??? question "Variables"
+    ```bash title="Example of a bash shell script"
+    #!/bin/bash
+
+    echo "Hello, World!"
+    ```
+    > The `echo` command prints its argument, in this case “Hello, World!”, to the terminal.
     ??? question "Literals"
+        The term ‘literal’, in computer science and shell programming, refers to a notation for representing a fixed value in source code. In shell scripts, these fixed values can include string literals, numeric literals or a boolean.
+        ```bash title="Example of literals in shell script"
+        #!/bin/bash
+        
+        StringLiteral="This is a string literal"
+        NumericLiteral=125
+        echo $StringLiteral
+        echo $NumericLiteral
+        ```
+        > `StringLiteral` and `NumericLiteral` are literals and `echo` is used to print them.
+    ??? question "Variables"
+        In the context of Shell Programming on Linux, a variable is a character string that can store system data or user-defined data. It is a symbolic name that is assigned to an amount of storage space that can change its value during the execution of the program. Variables play a vital role in any programming paradigm, and shell scripting is no different.
+
+        Variables fall into two broad categories: System Variables and User-Defined Variables. System variables are created and maintained by the Linux system itself. Examples include PATH, HOME, and PWD. User-defined variables, on the other hand, are created and controlled by the user.
+
+        A variable in shell scripting is defined by the ’=’ (equals) operator, and the value can be retrieved by prefixing the variable name with a ’$’ (dollar) sign.
+        ```bash
+        # Create a User-Defined Variable
+        MY_VARIABLE="Hello World"
+
+        # Print the value of the Variable
+        echo $MY_VARIABLE  # Output: Hello World
+        ```
     ??? question "Loops"
+        !!! note "for"
+            `for` loop iterates over a list of items and performs actions on each of them.
+            ```bash
+            for i in 1 2 3
+            do
+                echo "$i"
+            done
+            ```
+            This will ocutput
+            ```bash
+            1
+            2
+            3
+            ```
+        !!! note "while"
+            `while` loop executes commands as long as the control condition remains true.
+        !!! note "until
+            `until` loop runs commands until the control condition becomes true.
     ??? question "Conditionals"
+        ```bash
+        #!/bin/bash
+
+        a=10
+        b=20
+
+        if [ $a -lt 20 ]
+        then
+            echo "a is less than b"
+        elif [ $a -gt 20 ]
+        then
+            echo "a is greater than b"
+        else
+            echo "a is equal to b"
+        fi
+        ```
     ??? question "Debugging"
+        When encountering an issue in a shell script, you have several debugging tools at your disposal in a Linux environment. These aid in detecting, tracing, and fixing errors or bugs in your shell scripts. Some of these debugging tools include the bash shell’s `-x` (or `-v`) options, which allow for execution traces. Other tools like `trap`, `set` command, or even leveraging external debugging tools such as `shellcheck` can also be highly effective.
+        ```bash title="cat script.sh"
+        #!/bin/bash
+
+        echo "hocachoc.dev"
+        bad-command-abc
+        ```
+        ```bash title="bash -x script.sh" hl_lines="1 3"
+        + echo hocachoc.dev
+        hocachoc.dev
+        + bad-command-abc
+        script.sh: line 5: bad-command-abc: command not found
+        ```
+        or
+        ```bash title="cat script_with_debug_option.sh" hl_lines="1"
+        #!/bin/bash -x
+
+        echo "hocachoc.dev"
+        bad-command-abc
+        ```
+        ```bash title="./script_with_debug_option.sh " hl_lines="1 3"
+        + echo hocachoc.dev
+        hocachoc.dev
+        + bad-command-abc
+        ./script_with_debug_option.sh: line 5: bad-command-abc: command not found
+        ```
 ??? abstract "Troubleshooting"
     ??? question "ping"
+        ```bash title="ping google.com"
+        PING google.com (142.250.178.142) 56(84) bytes of data.
+        64 bytes from par21s22-in-f14.1e100.net (142.250.178.142): icmp_seq=1 ttl=118 time=1.11 ms
+        64 bytes from par21s22-in-f14.1e100.net (142.250.178.142): icmp_seq=2 ttl=118 time=1.05 ms
+        64 bytes from par21s22-in-f14.1e100.net (142.250.178.142): icmp_seq=3 ttl=118 time=1.05 ms
+        64 bytes from par21s22-in-f14.1e100.net (142.250.178.142): icmp_seq=4 ttl=118 time=1.05 ms
+        ^C
+        --- google.com ping statistics ---
+        4 packets transmitted, 4 received, 0% packet loss, time 3003ms
+        rtt min/avg/max/mdev = 1.048/1.064/1.105/0.023 ms
+        ```
     ??? question "ICMP"
     ??? question "traceroute"
+        Traceroute is a network diagnostic tool used widely in Linux systems for troubleshooting. It is designed to display the path that packets take from the system where traceroute is run to a specified destination system or website. It’s used to identify routing problems, offer latency measurement, and figure out the network structure as packets journey across the internet.
+
+        Each jump along the route is tested multiple times (the default is 3 but this can be changed), and the round-trip time for each packet is displayed. If certain packets are failing to reach their destination, traceroute can help diagnose where the failure is occurring.
+        ```bash title="traceroute google.com"
+         1  240.1.0.15 (240.1.0.15)  1.340 ms 240.1.0.12 (240.1.0.12)  1.421 ms  1.640 ms
+         2  * * *
+         3  151.148.8.45 (151.148.8.45)  1.152 ms  1.168 ms  1.156 ms
+         4  * * *
+         5  216.239.48.138 (216.239.48.138)  2.014 ms 72.14.237.92 (72.14.237.92)  1.154 ms 142.251.253.32 (142.251.253.32)  1.115 ms
+         6  142.251.64.131 (142.251.64.131)  1.275 ms 142.250.59.230 (142.250.59.230)  1.746 ms 142.251.64.129 (142.251.64.129)  1.288 ms
+         7  par21s22-in-f14.1e100.net (142.250.178.142)  1.036 ms  1.025 ms 72.14.238.53 (72.14.238.53)  2.925 ms
+        ```
     ??? question "netstat"
+        Netstat, short for network statistics, is a built-in command-line tool used in Linux systems for network troubleshooting and performance measurement. It provides statistics for protocols, a list of open ports, routing table information, and other important network details. Administrators and developers work with netstat to examine network issues and understand how a system communicates with others.
+
+        Its functionality is extended owing to various command-line options it supports, which could be used singularly or combinedly to fine-tune the output. These might include displaying numerical addresses instead of names (`-n)`, continuous monitoring (`-c`), or spotting connections on a specific protocol (`-t`, `-u`).
+        ```bash title="netstat -n"
+        Active Internet connections (w/o servers)
+        Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+        tcp        0      0 10.0.1.117:443          194.120.230.215:22      SYN_RECV   
+        ...       ...    ...                        ...                     ...
+        udp        0      0 10.0.1.117:56106        8.8.4.4:53              ESTABLISHED
+        Active UNIX domain sockets (w/o servers)
+        Proto RefCnt Flags       Type       State         I-Node   Path
+        unix  2      [ ]         DGRAM                    820113   /run/user/0/systemd/notify
+        unix  2      [ ]         DGRAM                    11526    /run/chrony/chronyd.sock
+        ...  ...     ...           ...                    ...      ...
+        unix  2      [ ]         DGRAM                    820018
+        ```
     ??? question "Packet Analysis"
 ??? abstract "Containerization"
     ??? question "ulimits"
