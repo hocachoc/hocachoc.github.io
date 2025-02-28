@@ -1039,17 +1039,233 @@
     GRUB_CMDLINE_LINUX=""
     ```
     ??? question "Boot Loaders"
+        Boot Loaders play an integral role in booting up any Linux-based system. When the system is switched on, it’s the Boot Loader that takes charge and loads the kernel of the OS into the system’s memory. The kernel then initializes the hardware components and loads necessary drivers, after which it starts the scheduler and executes the init process.
+
+        Typically, the two most commonly used boot loaders in Linux are LILO (Linux Loader) and GRUB (GRand Unified Bootloader). GRUB sets the standard for modern day Linux booting, providing rich features like a graphical interface, scripting, and debugging capabilities. LILO, on the other hand, is older and does not have as many features, but runs on a broader range of hardware platforms.
+        ```bash title="sudo update-grub"
+        Sourcing file `/etc/default/grub'
+        Generating grub configuration file ...
+        Found linux image: /boot/vmlinuz-6.11.0-17-generic
+        Found initrd image: /boot/initrd.img-6.11.0-17-generic
+        Found linux image: /boot/vmlinuz-6.8.0-52-generic
+        Found initrd image: /boot/initrd.img-6.8.0-52-generic
+        Found memtest86+ 64bit EFI image: /memtest86+x64.efi
+        Warning: os-prober will not be executed to detect other bootable partitions.
+        Systems on them will not be added to the GRUB boot configuration.
+        Check GRUB_DISABLE_OS_PROBER documentation entry.
+        Adding boot menu entry for UEFI Firmware Settings ...
+        done
+        ```
+        Irrespective of the type of Boot Loader used, understanding and configuring them properly is essential for maintaining an efficient, stable and secure operating system. Boot loaders also allow users to switch between different operating systems on the same machine, if required.
     ??? question "Logs"
+        Linux utilizes various log message levels from `emerg` (the system is unusable) to `debug` (debug-level messages). During the boot process, messages from various components of the system like kernel, init, services, etc., are stored. Many Linux distributions use systemd logging system, `journalctl`, which holds the logs of the boot process.
+        ```bash title="Viewing boot messages in real-time"
+        sudo dmesg
+        ```
 ??? abstract "Networking"
     ??? question "TCP/IP Stack"
+        The TCP/IP (Transmission Control Protocol/Internet Protocol) forms the backbone of internet protocols. Essentially, it is a set of networking protocols that allows two or more computers to communicate. In the context of Linux, TCP/IP networking is a fundamental part of the operating system’s functionality. It provides a platform for establishing connections and facilitating data transfer between two endpoints.
+
+        TCP/IP serves a vital role in enabling a host, given a correct IP configuration, to connect and interact with other hosts on the same or different networks. It is comprised of a four layers model, including the Network Interface, Internet, Transport, and Application layers. Understanding TCP/IP, its structure and how it works are crucial for effectively managing and troubleshooting Linux networks.
+        !!! example "View all active TCP/IP network connections with `netstat`"
+        ```bash title="sudo apt update; sudo apt install net-tools -y"
+        sudo apt update
+        sudo apt install net-tools -y
+        ```bash title="netstat -at"
+        Active Internet connections (servers and established)
+        Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+        tcp        0      0 localhost:ipp           0.0.0.0:*               LISTEN     
+        tcp        0      0 chanvi-Dell-G15-:domain 0.0.0.0:*               LISTEN     
+        tcp        0      0 _localdnsproxy:domain   0.0.0.0:*               LISTEN     
+        tcp        0      0 localhost:5433          0.0.0.0:*               LISTEN     
+        tcp        0      0 _localdnsstub:domain    0.0.0.0:*               LISTEN     
+        tcp       25      0 chanvi-Dell-G15-5:49924 ec2-15-188-95-58.:https CLOSE_WAIT 
+        tcp        0      0 chanvi-Dell-G15-5:54636 a23-36-252-26.dep:https ESTABLISHED
+        tcp        0      0 chanvi-Dell-G15-5:50966 146.75.45.229:https     ESTABLISHED
+        tcp        0      0 chanvi-Dell-G15-5:38352 172.67.72.113:https     ESTABLISHED
+        ...      ...    ... ...                     ...                     ...
+        tcp        0      0 chanvi-Dell-G15-5:55284 103.229.10.247:https    ESTABLISHED
+        tcp6       0      0 ip6-localhost:ipp       [::]:*                  LISTEN
+        ```
     ??? question "Subnetting"
+        !!! note "Display current routing table"
+        ```bash title="route -n"
+        Kernel IP routing table
+        Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+        0.0.0.0         10.0.1.1        0.0.0.0         UG    0      0        0 ens5
+        10.0.1.0        0.0.0.0         255.255.255.0   U     0      0        0 ens5
+        ```
+        !!! note "Add a new subnet"
+        ```bash title="route add -net 10.0.2.0/24 gw 0.0.0.0"
+        ```
+        ```bash title="route -n" hl_lines="5"
+        Kernel IP routing table
+        Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+        0.0.0.0         10.0.1.1        0.0.0.0         UG    0      0        0 ens5
+        10.0.1.0        0.0.0.0         255.255.255.0   U     0      0        0 ens5
+        10.0.2.0        0.0.0.0         255.255.255.0   UG    0      0        0 ens5
+        ```
     ??? question "Ethernet & ARP/RARP"
+        * Ethernet: It’s the most widely installed LAN (Local Area Network) technology, allowing devices to communicate within a local area network.
+        * ARP: As per its name, it provides address resolution, translating IP addresses into MAC (Media Access Control) addresses, facilitating more direct network communication.
+        * RARP: It is the Reverse Address Resolution Protocol, working in the opposite way to ARP. It converts MAC addresses into IP addresses, which is useful in scenarios when a computer knows its MAC address but needs to find out its IP address.
     ??? question "DHCP"
+        In Linux, DHCP can be configured and managed using terminal commands. This involves the installation of the DHCP server software, editing the configuration files, and managing the server’s services.
+
+        A traditional DHCP server should have a static IP address to manage the IP distribution effectively. The DHCP in Linux also handles DNS and other related data that your network might require.
+        !!! example "Install a DHCP server in a Debian-based Linux"
+        ```bash title="sudo apt-get install isc-dhcp-server -y"       
+        Reading package lists... Done
+        Building dependency tree... Done
+        Reading state information... Done
+        The following packages were automatically installed and are no longer required:
+        libllvm17t64 python3-netifaces
+        Use 'sudo apt autoremove' to remove them.
+        The following additional packages will be installed:
+        isc-dhcp-common
+        Suggested packages:
+        isc-dhcp-server-ldap policycoreutils
+        The following NEW packages will be installed:
+        isc-dhcp-common isc-dhcp-server
+        0 upgraded, 2 newly installed, 0 to remove and 71 not upgraded.
+        Need to get 1,281 kB of archives.
+        After this operation, 4,281 kB of additional disk space will be used.
+        Do you want to continue? [Y/n] y
+        Get:1 http://vn.archive.ubuntu.com/ubuntu noble/universe amd64 isc-dhcp-server amd64 4.4.3-P1-4ubuntu2 [1,236 kB]
+        Get:2 http://vn.archive.ubuntu.com/ubuntu noble/universe amd64 isc-dhcp-common amd64 4.4.3-P1-4ubuntu2 [45.8 kB]
+        Fetched 1,281 kB in 3s (382 kB/s)     
+        Preconfiguring packages ...
+        Selecting previously unselected package isc-dhcp-server.
+        (Reading database ... 269829 files and directories currently installed.)
+        Preparing to unpack .../isc-dhcp-server_4.4.3-P1-4ubuntu2_amd64.deb ...
+        Unpacking isc-dhcp-server (4.4.3-P1-4ubuntu2) ...
+        Selecting previously unselected package isc-dhcp-common.
+        Preparing to unpack .../isc-dhcp-common_4.4.3-P1-4ubuntu2_amd64.deb ...
+        Unpacking isc-dhcp-common (4.4.3-P1-4ubuntu2) ...
+        Setting up isc-dhcp-server (4.4.3-P1-4ubuntu2) ...
+        Generating /etc/default/isc-dhcp-server...
+        Created symlink /etc/systemd/system/multi-user.target.wants/isc-dhcp-server.service → /usr/lib/systemd/system/isc-dhcp-server.service.
+        Created symlink /etc/systemd/system/multi-user.target.wants/isc-dhcp-server6.service → /usr/lib/systemd/system/isc-dhcp-server6.service.
+        Setting up isc-dhcp-common (4.4.3-P1-4ubuntu2) ...
+        Processing triggers for man-db (2.12.0-4build2) ...
+        ```
+        > After the installation process, all configurations of the DHCP server are done in the configuration file located at `/etc/dhcp/dhcpd.conf` which can be edited using any text editor.
+        ```bash title="cat /etc/dhcp/dhcpd.conf"
+        # dhcpd.conf
+        #
+        # Sample configuration file for ISC dhcpd
+        #
+        # Attention: If /etc/ltsp/dhcpd.conf exists, that will be used as
+        # configuration file instead of this file.
+        #
+
+        # option definitions common to all supported networks...
+        option domain-name "example.org";
+        option domain-name-servers ns1.example.org, ns2.example.org;
+
+        default-lease-time 600;
+        max-lease-time 7200;
+
+        # The ddns-updates-style parameter controls whether or not the server will
+        # attempt to do a DNS update when a lease is confirmed. We default to the
+        # behavior of the version 2 packages ('none', since DHCP v2 didn't
+        # have support for DDNS.)
+        ddns-update-style none;
+
+        ...
+
+        #shared-network 224-29 {
+        #  subnet 10.17.224.0 netmask 255.255.255.0 {
+        #    option routers rtr-224.example.org;
+        #  }
+        #  subnet 10.0.29.0 netmask 255.255.255.0 {
+        #    option routers rtr-29.example.org;
+        #  }
+        #  pool {
+        #    allow members of "foo";
+        #    range 10.17.224.10 10.17.224.250;
+        #  }
+        #  pool {
+        #    deny members of "foo";
+        #    range 10.0.29.10 10.0.29.230;
+        #  }
+        #}
+        ```
     ??? question "IP Routing"
+        ```bash title="ip route show"
+        default via 10.0.1.1 dev ens5 
+        10.0.1.0/24 dev ens5 proto kernel scope link src 10.0.1.117
+        ```
     ??? question "DNS Resolution"
+        On Linux systems, when an application needs to connect to a certain URL, it consults the DNS resolver. This resolver, using the file `/etc/resolv.conf`, communicates with the DNS server, which then converts the URL into an IP address to establish a network connection.
+        ```bash title="cat /etc/resolv.conf"
+        nameserver 10.0.0.2
+        ```
+        ```bash title="nslookup hocachoc.dev"
+        Server:         127.0.0.53
+        Address:        127.0.0.53#53
+
+        Non-authoritative answer:
+        Name:   hocachoc.dev
+        Address: 185.199.111.153
+        Name:   hocachoc.dev
+        Address: 185.199.110.153
+        Name:   hocachoc.dev
+        Address: 185.199.108.153
+        Name:   hocachoc.dev
+        Address: 185.199.109.153
+        Name:   hocachoc.dev
+        Address: 2606:50c0:8003::153
+        Name:   hocachoc.dev
+        Address: 2606:50c0:8001::153
+        Name:   hocachoc.dev
+        Address: 2606:50c0:8000::153
+        Name:   hocachoc.dev
+        Address: 2606:50c0:8002::153
+        ```
+        ```bash title="dig hocachoc.dev"
+        ; <<>> DiG 9.18.30-0ubuntu0.24.04.2-Ubuntu <<>> hocachoc.dev
+        ;; global options: +cmd
+        ;; Got answer:
+        ;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 43906
+        ;; flags: qr rd ra; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 1
+
+        ;; OPT PSEUDOSECTION:
+        ; EDNS: version: 0, flags:; udp: 65494
+        ;; QUESTION SECTION:
+        ;hocachoc.dev.                  IN      A
+
+        ;; ANSWER SECTION:
+        hocachoc.dev.           1787    IN      A       185.199.108.153
+        hocachoc.dev.           1787    IN      A       185.199.109.153
+        hocachoc.dev.           1787    IN      A       185.199.110.153
+        hocachoc.dev.           1787    IN      A       185.199.111.153
+
+        ;; Query time: 0 msec
+        ;; SERVER: 127.0.0.53#53(127.0.0.53) (UDP)
+        ;; WHEN: Fri Feb 28 11:50:58 +07 2025
+        ;; MSG SIZE  rcvd: 105
+        ```
     ??? question "Netfilter"
+        Netfilter is a powerful tool included in Linux that provides the functionality for maneuvering and altering network packets. It is essentially a framework that acts as an interface between the kernel and the packet, allowing for the manipulation and transformation of packets in transit.
+
+        Netfilter’s primary application is in developing firewall systems and managing network address translations (NATs). In Linux, netfilter is extremely valuable due to the wide range of applications it offers, from traffic control, packet modification, logging, and network intrusion detection.
+
+        The structure of netfilter allows for custom functions, often referred to as hooks, to be inserted into the kernel’s networking stack. These hooks can manipulate or inspect packets at various stages like prerouting, local in, forward, local out, and postrouting.
+
+        A common tool used in conjunction with netfilter is iptables, which provides a mechanism to configure the tables in the kernel provided by the Netfilter Framework.
+        !!! example "Using `iptables` with netfilter module to create a simple firewall rule"
+        ```bash title="iptables -A INPUT -i eth0 -s 192.168.0.0/24 -m netfilter --netfilter-name example --action drop"
+        ```
+        > In this command, ‘-A INPUT’ is adding a new rule to the ‘INPUT’ chain. ‘-i eth0’ is specifying the network interface, and ‘-s 192.168.0.0/24’ is designating the IP address range for the rule. ‘-m netfilter’ is calling the netfilter module, ‘—netfilter-name example’ is naming the rule, and ‘—action drop’ is specifying how to handle the matching packets (In this case, dropping them).
     ??? question "SSH"
+        ```bash title="SSH to remote server with private key"
+        ssh -i [private_key] [username]@[remote_server_ipaddress]
+        ```
     ??? question "File Transfer"
+        ```bash title="Copy file from local to remote destination"
+        scp -i [private_key] /path/to/local/file [username]@[remote_server_ipaddress]:/path/to/destination
+        ```
 ??? abstract "Backup Tools"
     ??? question "rsync"
     ??? question "tar"
