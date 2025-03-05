@@ -1,19 +1,17 @@
 ---
 draft: false
 date:
-  created: 2025-01-23
+  created: 2024-12-15
 categories:
-  - Architecture Design
-  - IaC
-  - CI/CD
-  - Cloud Computing
-  - Best Practices
+  - AWS
+  - Cloud Networking
 authors:
   - nhamchanvi
 ---
 
-# Architecting a Robust and Scalable LEMP Stack with OpenTofu and Terraspace
-
+# Mastering AWS networking: VPC, Subnets and more
 Target Audience: DevOps engineers, system administrators, or anyone interested in automating infrastructure deployments.
 
 <!-- more -->
+
+

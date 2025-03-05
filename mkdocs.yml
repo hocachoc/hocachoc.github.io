@@ -1,21 +1,24 @@
 # Project information
-site_name: Học Cách Học DevOps
-site_url: https://hocachoc.dev
-site_author: Nhâm Chấn Vĩ
+site_name: Learning How To Learn DevOps for Absolutely Beginners
+site_url: https://hocachoc.dev/
+site_author: Codey Nham Chan Vi
 site_description: >-
-  Cung cấp phương pháp và kiến thức cũng như kinh nghiệm trong việc học DevOps.
+  Project-based Blog for Absolutely DevOps Beginners using
+  Learning How To Learn Techniques to help to remember
+  knowledge/skills longer and provide 1-1 coaching on DevOps
+  career.
 
 # Repository
-repo_name: hocachoc.github.io
-repo_url: https://github.com/hocachoc/hocachoc.github.io
+# repo_name: hocachoc.github.io
+# repo_url: https://github.com/hocachoc/hocachoc.github.io
 
 # Copyright
-copyright: Copyright &copy; 2025 Nhâm Chấn Vĩ
+copyright: Copyright &copy; 2024-2025 Codey Nham Chan Vi
 
 # Configuration
 theme:
   name: material
-  language: vi
+  language: en
   features:
     - announce.dismiss
     - content.action.edit
@@ -27,7 +30,7 @@ theme:
     # - content.tabs.link
     - content.tooltips
     # - header.autohide
-    # - navigation.expand
+    - navigation.expand
     - navigation.footer
     - navigation.indexes
     # - navigation.instant
@@ -50,9 +53,10 @@ theme:
         icon: material/link
         name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: indigo
-      accent: indigo
+      scheme: custom
+      # scheme: default
+      # primary: indigo
+      # accent: indigo
       toggle:
         icon: material/toggle-switch
         name: Switch to dark mode
@@ -73,6 +77,7 @@ theme:
 plugins:
   - blog:
       archive: false
+      # categories_toc: true
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   # - minify:
@@ -84,10 +89,11 @@ extra:
     new: Recently added
     deprecated: Deprecated
   social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/hocachoc
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/chanvi
+
+extra_css:
+  - stylesheets/extra.css
 
 # Extensions
 markdown_extensions:
@@ -142,8 +148,9 @@ not_in_nav: |
 
 # Page tree
 nav:
-  - Roadmap: index.md
-  - Library:
-    - library/linux.md
+  - Home: index.md
   - Blog:
     - blog/index.md
+  - Library:
+    - library/linux.md
+  # - Roadmap: roadmap.md
