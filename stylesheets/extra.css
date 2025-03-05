@@ -1,0 +1,11 @@
+/* [data-md-color-scheme="custom"] {
+  --md-primary-fg-color:        #FFB41F;
+  --md-primary-fg-color--light: #FFB41F;
+  --md-primary-fg-color--dark:  #FFB41F;
+} */
+
+:root  > * {
+  --md-primary-fg-color:        #FFB41F;
+  --md-primary-fg-color--light: #ECB7B7;
+  --md-primary-fg-color--dark:  #90030C;
+}
