@@ -60,5 +60,5 @@ Honestly, I get a kick out of building stuff that *just works*. You know, those 
 
 ## Let's Connect!
 
-If you want to chat about DevSecOps, or just geek out about tech, hit me up on [LinkedIn](https://linkedin.com/in/chanvi). Let's make some magic happen!
+If you are SysAdmin, IT Operations, Network Engineer or DBS and want to getting started as Junior DevOps Engineer, hit me up on [LinkedIn](https://linkedin.com/in/chanvi). Let's make some magic happen!
 
