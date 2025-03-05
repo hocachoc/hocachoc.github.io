@@ -12,21 +12,22 @@ So, you're looking to learn more about me, huh? Well, I'm a Senior DevOps Engine
 
 Honestly, I get a kick out of building stuff that *just works*. You know, those systems that are always up, always secure, and just make life easier. Here’s what I’m good at:
 
-* **Automating everything:** Because who has time for manual work?
+* **Automating almost everything:** Because who has time for manual work? But need to decide what to automating what to not automating.
 * **Making deployments a breeze:** CI/CD pipelines? That's my jam.
-* **Security from the get-go:** I weave security into every step.
+* **Security from the get-go:** I weave security into every step, GitOps helps me most.
 * **Containers and Kubernetes:** Think of me as a container whisperer.
+* **Configuration Management:** I love monolith.
 
 ## My Tech Toolbox
 
-* **Cloud Stuff:** AWS? Azure? GCP? I speak their language.
+* **Cloud Stuff:** I speak AWS language now and learning to speak Azure and CGP.
 * **Containers:** Docker and Kubernetes are my best friends.
 * **Infrastructure as Code:** Terraform and Terraspace keep things organized.
 * **Immutable Deployment:** GitOps by ArgoCD keep my brain free.
 * **CI/CD:** GitHub Actions and ArgoCD make life easy.
 * **Security Tools:** SAST and DAST? Check!
 * **Keeping an Eye On Things:** ELK stack help me stay on top of everything.
-* **Automation:** Python and Bash are my trusty sidekicks.
+* **Automation:** Python, Bash, Ansible, Packer are my trusty sidekicks.
 * **Compliance:** I make sure we play by the rules.
 
 ## Some Projects I'm Proud Of
