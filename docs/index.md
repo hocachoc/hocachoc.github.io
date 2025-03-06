@@ -66,4 +66,4 @@ Honestly, I get a kick out of building stuff that _just works_. You know, those 
 
 ## Let's Connect!
 
-If you are SysAdmin, IT Operations, Network Engineer or DBA and want to getting started as Junior DevOps Engineer, hit me up on [:fontawesome-brands-linkedin:](https://linkedin.com/in/chanvi). Let's make some magic happen!
+If you are SysAdmin, IT Operations, Network Engineer or DBA and want to getting started as Junior DevOps Engineer, hit me up on [:fontawesome-brands-linkedin:{ .heart }](https://linkedin.com/in/chanvi). Let's make some magic happen!
