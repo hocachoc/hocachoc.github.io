@@ -13,7 +13,7 @@ site_description: >-
 # repo_url: https://github.com/hocachoc/hocachoc.github.io
 
 # Copyright
-copyright: Copyright &copy; 2024-2025 Codey Nham Chan Vi
+copyright: Copyright © 2024 - 2025 Codey Nham Chan Vi
 
 # Configuration
 theme:
@@ -80,6 +80,7 @@ plugins:
       # categories_toc: true
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  # - glightbox
   # - minify:
   #     minify_html: false
 
@@ -148,7 +149,7 @@ not_in_nav: |
 
 # Page tree
 nav:
-  - Home: index.md
+  - Hello: index.md
   - Blog:
     - blog/index.md
   - Library:
