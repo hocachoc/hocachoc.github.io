@@ -1,11 +1,11 @@
 # Project information
-site_name: Learning How To Learn DevOps for Absolutely Beginners
+site_name: Learning How To Learn Dev(Sec)Ops for Absolutely Beginners
 site_url: https://hocachoc.dev/
 site_author: Codey Nham Chan Vi
 site_description: >-
-  Project-based Blog for Absolutely DevOps Beginners using
+  Project-based Blog for Absolutely Dev(Sec)Ops Beginners using
   Learning How To Learn Techniques to help to remember
-  knowledge/skills longer and provide 1-1 coaching on DevOps
+  knowledge/skills longer and provide 1-1 coaching on Dev(Sec)Ops
   career.
 
 # Repository
@@ -13,7 +13,7 @@ site_description: >-
 # repo_url: https://github.com/hocachoc/hocachoc.github.io
 
 # Copyright
-copyright: Copyright © 2024 - 2025 Codey Nham Chan Vi
+copyright: Copyright © 2024 - 2025 <a href="https://www.linkedin.com/in/chanvi"  target="_blank" rel="noopener">Codey Nham Chan Vi</a>
 
 # Configuration
 theme:
