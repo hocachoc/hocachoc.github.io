@@ -4,7 +4,7 @@ date:
   created: 2024-12-01
 categories:
   - Containerization
-  - Security
+  - DevSecOps
 authors:
   - nhamchanvi
 ---

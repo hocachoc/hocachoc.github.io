@@ -3,7 +3,7 @@ draft: false
 date:
   created: 2024-12-22
 categories:
-  - Infrastructure as Code
+  - IaC
   - Terraspace
 authors:
   - nhamchanvi

@@ -5,7 +5,7 @@ date:
 categories:
   - API Gateways
   - CloudFront
-  - Security
+  - DevSecOps
 authors:
   - nhamchanvi
 comments: true

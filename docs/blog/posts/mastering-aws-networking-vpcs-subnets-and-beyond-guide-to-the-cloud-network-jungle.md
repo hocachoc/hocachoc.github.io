@@ -3,7 +3,6 @@ draft: false
 date:
   created: 2024-12-15
 categories:
-  - AWS
   - Cloud Networking
 authors:
   - nhamchanvi

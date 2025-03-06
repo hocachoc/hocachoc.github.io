@@ -3,8 +3,8 @@ draft: false
 date:
   created: 2024-12-29
 categories:
-  - Infrastructure as Code
-  - Security
+  - IaC
+  - DevSecOps
 authors:
   - nhamchanvi
 ---

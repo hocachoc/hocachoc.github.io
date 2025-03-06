@@ -5,7 +5,6 @@ date:
 categories:
   - Orchestration
   - GitOps
-  - ArgoCD
 authors:
   - nhamchanvi
 ---

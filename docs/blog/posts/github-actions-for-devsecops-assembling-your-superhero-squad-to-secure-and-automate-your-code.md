@@ -4,7 +4,6 @@ date:
   created: 2025-01-26
 categories:
   - DevSecOps
-  - Github Actions
   - CI/CD
 authors:
   - nhamchanvi

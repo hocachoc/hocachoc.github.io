@@ -1,6 +1,4 @@
-# 
-
-## Linux 100
+# Linux
 
 <div class="grid" markdown>
 

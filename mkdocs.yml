@@ -154,4 +154,6 @@ nav:
     - blog/index.md
   - Library:
     - library/linux.md
+    - library/iac.md
+    - library/cm.md
   # - Roadmap: roadmap.md

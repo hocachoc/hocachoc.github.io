@@ -4,7 +4,7 @@ date:
   created: 2025-02-16
 categories:
   - Cloud Networking
-  - Security
+  - DevSecOps
 authors:
   - nhamchanvi
 ---
