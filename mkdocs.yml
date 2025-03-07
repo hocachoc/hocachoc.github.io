@@ -13,7 +13,7 @@ site_description: >-
 # repo_url: https://github.com/hocachoc/hocachoc.github.io
 
 # Copyright
-copyright: Copyright © 2024 - 2025 <a href="https://www.linkedin.com/in/chanvi"  target="_blank" rel="noopener">Codey Nham Chan Vi</a>
+copyright: Copyright © 2024 - 2025 <a href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=chanvi" target="_blank" rel="noopener">Codey Nham Chan Vi</a>
 
 # Configuration
 theme:
@@ -77,8 +77,9 @@ theme:
 # Plugins
 plugins:
   - blog:
+      blog_dir: projects
       archive: false
-      # categories_toc: true
+      categories_toc: true
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   # - glightbox
@@ -92,7 +93,7 @@ extra:
     deprecated: Deprecated
   social:
     - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/chanvi
+      link: https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=chanvi
 
 extra_css:
   - stylesheets/extra.css
@@ -151,10 +152,10 @@ not_in_nav: |
 # Page tree
 nav:
   - Hello: index.md
-  - Blog:
-    - blog/index.md
+  - Projects:
+      - projects/index.md
   - Library:
-    - library/linux.md
-    - library/iac.md
-    - library/cm.md
+      - library/linux.md
+      - library/iac.md
+      - library/cm.md
   # - Roadmap: roadmap.md

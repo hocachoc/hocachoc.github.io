@@ -6,7 +6,7 @@ hide:
 
 # Hey there, I'm Codey Nham Chan Vi, your 1-on-1 DevOps Coach.
 
-So, you're looking to learn more about me. Well, I'm a Senior Dev(Sec)Ops Engineer, and honestly, I love what I do. Basically, I'm all about making sure your systems are not only running smoothly but also super secure. I've been tinkering with IT for over 16 years, and the last 4+ years have been full of Pure DevSecOps magic!
+So, you're looking to learn more about me. Well, I'm a Senior Dev(Sec)Ops Engineer at Tekos Interactive, and honestly, I love what I do. Basically, I'm all about making sure your systems are not only running smoothly but also super secure. I've been tinkering with IT for over 16 years, and the last 4+ years have been full of Pure DevSecOps magic!
 
 ## What Gets Me Excited?
 
@@ -65,4 +65,5 @@ Honestly, I get a kick out of building stuff that _just works_. You know, those 
 
 ## Let's Connect!
 
-If you are a System Admin (Windows or Linux), Network Engineer, Security Engineer, DBA, or even IT Helpdesk and want to get started as a Junior DevOps Engineer, hit me up on [:fontawesome-brands-linkedin:{ .heart }](https://linkedin.com/in/chanvi). Let's make some magic happen!
+If you are a System Admin (Windows or Linux), Network Engineer, Security Engineer, DBA, or even IT Helpdesk and want to get started as a Junior DevOps Engineer, <a class="libutton" href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=chanvi" target="_blank">hit me up on :fontawesome-brands-linkedin:{ .heart }</a>. Let's make some magic happen!
+
