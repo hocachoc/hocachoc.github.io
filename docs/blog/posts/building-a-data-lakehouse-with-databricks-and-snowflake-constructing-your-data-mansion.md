@@ -6,6 +6,7 @@ categories:
   - Data & Analytics
 authors:
   - nhamchanvi
+comments: true
 ---
 
 # Building a Data Lakehouse with Databricks and Snowflake: Constructing Your Data Mansion

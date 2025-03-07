@@ -7,6 +7,7 @@ categories:
   - DevSecOps
 authors:
   - nhamchanvi
+comments: true
 ---
 
 # Securing Your Infrastructure with IaC Best Practices: Building Fortresses, Not Sandcastles

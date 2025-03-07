@@ -6,6 +6,7 @@ categories:
   - Cloud Networking
 authors:
   - nhamchanvi
+comments: true
 ---
 
 # Mastering AWS Networking: VPCs, Subnets, and Beyond (Guide to the Cloud Network Jungle)

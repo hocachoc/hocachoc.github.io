@@ -18,6 +18,7 @@ copyright: Copyright © 2024 - 2025 <a href="https://www.linkedin.com/in/chanvi"
 # Configuration
 theme:
   name: material
+  custom_dir: overrides
   language: en
   features:
     - announce.dismiss

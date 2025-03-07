@@ -7,6 +7,7 @@ categories:
   - DevSecOps
 authors:
   - nhamchanvi
+comments: true
 ---
 
 # Network Security Best Practices in Cloud Environments: Building Your Fortress in the Cloud

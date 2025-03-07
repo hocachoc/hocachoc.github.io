@@ -48,11 +48,11 @@ Write a shell script that uses the find command, along with other Linux commands
 - **Security Awareness**: By hiding and finding files, you gain a better understanding of file permissions and security implications, which are crucial in DevOps.
 
 !!! example
-`bash title="cat my_hidden_treasure.txt"
+    ```bash title="cat my_hidden_treasure.txt"
     super super secret
-    `
-```bash title="cat treasure_hunt.sh"
-#!/bin/bash
+    ```
+    ```bash title="cat treasure_hunt.sh"
+    #!/bin/bash
 
     # Start the timer
     start_time=$(date +%s)

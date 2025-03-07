@@ -7,6 +7,7 @@ categories:
   - Orchestration
 authors:
   - nhamchanvi
+comments: true
 ---
 
 # Kubernetes Networking: A Practical Guide (No Jargon, Just the Good Stuff)

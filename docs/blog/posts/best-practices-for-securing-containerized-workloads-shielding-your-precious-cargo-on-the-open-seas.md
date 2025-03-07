@@ -7,6 +7,7 @@ categories:
   - Containerization
 authors:
   - nhamchanvi
+comments: true
 ---
 
 # Best Practices for Securing Containerized Workloads: Shielding Your Precious Cargo on the Open Seas

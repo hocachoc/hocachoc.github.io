@@ -7,6 +7,7 @@ categories:
   - DevSecOps
 authors:
   - nhamchanvi
+comments: true
 ---
 
 # Integrating SAST and DAST into Your CI/CD Pipeline: Spicing Up Your Pipeline with Security Goodness

@@ -1,5 +1,5 @@
 # CM
 
-[![Image]](../../blog)
+[![Image]](../blog/index.md)
 
-[Image]: ../../assets/page-under-construction.jpg
+[Image]: ../assets/page-under-construction.jpg

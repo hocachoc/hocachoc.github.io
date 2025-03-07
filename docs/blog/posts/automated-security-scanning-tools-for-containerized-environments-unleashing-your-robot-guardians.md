@@ -7,6 +7,7 @@ categories:
   - Containerization
 authors:
   - nhamchanvi
+comments: true
 ---
 
 # Automated Security Scanning Tools for Containerized Environments: Unleashing Your Robot Guardians

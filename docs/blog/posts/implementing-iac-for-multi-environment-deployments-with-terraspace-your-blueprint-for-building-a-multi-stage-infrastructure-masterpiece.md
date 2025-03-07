@@ -7,6 +7,7 @@ categories:
   - Terraspace
 authors:
   - nhamchanvi
+comments: true
 ---
 
 # Implementing IaC for Multi-Environment Deployments with Terraspace: Your Blueprint for Building a Multi-Stage Infrastructure Masterpiece

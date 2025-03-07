@@ -7,6 +7,7 @@ categories:
   - DevSecOps
 authors:
   - nhamchanvi
+comments: true
 ---
 
 # Docker Security: Keepin' Your Containers Safe (and Cozy)

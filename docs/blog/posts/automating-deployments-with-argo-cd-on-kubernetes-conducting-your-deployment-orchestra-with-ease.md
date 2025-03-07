@@ -7,6 +7,7 @@ categories:
   - GitOps
 authors:
   - nhamchanvi
+comments: true
 ---
 
 # Automating Deployments with Argo CD on Kubernetes: Conducting Your Deployment Orchestra with Ease

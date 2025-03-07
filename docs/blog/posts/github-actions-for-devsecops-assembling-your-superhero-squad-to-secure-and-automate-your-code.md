@@ -7,6 +7,7 @@ categories:
   - CI/CD
 authors:
   - nhamchanvi
+comments: true
 ---
 
 # GitHub Actions for DevSecOps: Assembling Your Superhero Squad to Secure and Automate Your Code
