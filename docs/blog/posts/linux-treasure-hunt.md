@@ -35,22 +35,24 @@ Write a shell script that uses the find command, along with other Linux commands
 - Control flow (e.g., if, else) to handle different scenarios
 
 ### 3. Level Up:
-* Add a timer to your script to track how long it takes to find the treasure.
-* Modify the script to search for multiple treasures.
-* Create a "treasure map" (a text file with clues) that your script can decipher to find the treasure.
+
+- Add a timer to your script to track how long it takes to find the treasure.
+- Modify the script to search for multiple treasures.
+- Create a "treasure map" (a text file with clues) that your script can decipher to find the treasure.
 
 ## Why This Matters for DevOps:
-* **File System Mastery**: DevOps engineers often work with complex file systems and need to locate and manage files efficiently.
-* **Automation**: Automating tasks with shell scripts is a core DevOps skill. This project gives you hands-on practice.
-* **Problem-Solving**: This challenge encourages you to think creatively and use Linux commands in new ways to solve a problem.
-* **Security Awareness**: By hiding and finding files, you gain a better understanding of file permissions and security implications, which are crucial in DevOps.
 
-!!! example 
-    ```bash title="cat my_hidden_treasure.txt"
+- **File System Mastery**: DevOps engineers often work with complex file systems and need to locate and manage files efficiently.
+- **Automation**: Automating tasks with shell scripts is a core DevOps skill. This project gives you hands-on practice.
+- **Problem-Solving**: This challenge encourages you to think creatively and use Linux commands in new ways to solve a problem.
+- **Security Awareness**: By hiding and finding files, you gain a better understanding of file permissions and security implications, which are crucial in DevOps.
+
+!!! example
+`bash title="cat my_hidden_treasure.txt"
     super super secret
-    ```
-    ```bash title="cat treasure_hunt.sh"
-    #!/bin/bash
+    `
+```bash title="cat treasure_hunt.sh"
+#!/bin/bash
 
     # Start the timer
     start_time=$(date +%s)
