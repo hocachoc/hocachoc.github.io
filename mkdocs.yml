@@ -82,6 +82,7 @@ plugins:
       categories_toc: true
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  # - privacy
   # - glightbox
   # - minify:
   #     minify_html: false
@@ -94,6 +95,8 @@ extra:
   social:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=chanvi
+    - icon: fontawesome/brands/github
+      link: https://github.com/nhamchanvi
   analytics:
     provider: google
     property: G-4XGTCTF7NS

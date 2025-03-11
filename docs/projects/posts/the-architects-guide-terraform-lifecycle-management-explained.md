@@ -392,7 +392,7 @@ aws_security_group.allow_ssh
 ```
 
 !!! info
-    Terraform State Management is out of the scope of this project; please patient, you can read more [at the end of this article](./the-architects-guide-terraform-lifecycle-management-explained/#references)
+    Terraform State Management is out of the scope of this project; please patient, you can read more [at the end of this article](#references)
 
 ## 6. The Demolition: `terraform destroy`
 
