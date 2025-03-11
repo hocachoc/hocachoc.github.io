@@ -153,7 +153,7 @@ You're examining the proposed changes to your building before implementing them.
 You're identifying any potential issues or conflicts that may arise from the changes.
 Terraform compares the current state of your infrastructure with the desired state, showing you the changes it will make.
 
-First, imaging that you want to allow SSH inbound traffic to the instance, update the Terraform code
+First, imagine that you want to allow SSH inbound traffic to the instance; update the Terraform code
 ```bash title="cat main.tf" hl_lines="8-27 33"
 # main.tf - Example Terraform Configuration
 
@@ -199,6 +199,8 @@ output "public_ip" {
   value = aws_instance.web.public_ip
 }
 ```
+
+Second, `terraform plan` to review the changes (if any)
 ```bash title="terraform plan"
 aws_instance.web: Refreshing state... [id=i-0343344212a5a2b7d]
 
@@ -390,7 +392,7 @@ aws_security_group.allow_ssh
 ```
 
 !!! info
-    Terraform State Management is out-of-scope of this project, you can try your luck by searching on this website.
+    Terraform State Management is out of the scope of this project; you can try your luck by searching on this website.
 
 ## 6. The Demolition: `terraform destroy`
 
@@ -579,7 +581,7 @@ Now, Terraform State is cleared
 
 ## 7. Building Districts: `terraform workspace`
 
-This is like having different districts within your city, each with its own purpose and configuration.
+This is like having different districts within your city, each with its purpose and configuration.
 
 Workspaces allow you to manage multiple environments (e.g., dev, staging, prod) within the same Terraform configuration.
 Each workspace has its state file, ensuring that environments are isolated and independent.
@@ -612,16 +614,12 @@ remote: Compressing objects: 100% (3/3), done.
 remote: Total 4 (delta 0), reused 4 (delta 0), pack-reused 0 (from 0)
 Receiving objects: 100% (4/4), done.
 ```
-2. Change directory to the `project-as-code/terraform-lifecycle-management`
+2. Change the directory to the `project-as-code/terraform-lifecycle-management`
 ```bash title="cd project-as-code/terraform-lifecycle-management"
 ```
 3. List the files/dirs inside the project folder
 ```bash title="ls -alh"
-total 16K
-drwxrwxr-x 2 chanvi chanvi 4.0K Mar 10 17:49 .
-drwxrwxr-x 4 chanvi chanvi 4.0K Mar 10 17:49 ..
--rw-rw-r-- 1 chanvi chanvi  102 Mar 10 17:49 .gitignore
--rw-rw-r-- 1 chanvi chanvi  909 Mar 10 17:49 main.tf
+
 ```
 4. Inspect the `main.tf`
 ```bash title="cat main.tf"
@@ -672,6 +670,13 @@ output "public_ip" {
 
     * `provider "aws"`: Configures the AWS provider, specifying the region.
     * `resource "aws_security_group" "allow_ssh"`: Creates a security group that allows SSH access.
-    * `resource "aws_instance" "web"`: Creates an EC2 instance in the subnet, using the security group.
+    * `resource "aws_instance" "web"`: This creates an EC2 instance in the subnet, using the security group.
     * `output "public_ip"`: Outputs the public IP address of the EC2 instance.
 
+## Conclusion
+
+Alright, so, we've talked a lot about how Terraform helps you build your digital stuff, right? It's kind of like having an organized construction crew for your servers and networks. You start by getting all your tools ready with `terraform init`, then you lay down the foundation with `terraform apply`. You peek at the blueprints with `terraform plan` before making any big changes, and then you build on top of that foundation, again with `terraform apply`.
+
+And, you know, just like any good construction project, you gotta keep track of everything. That's what the state file is for – it's like your project diary. And when you're done, or if you need to tear things down, `terraform destroy` is your wrecking ball.
+
+Terraform's lifecycle is just a fancy way of saying it helps you manage your infrastructure from start to finish. It keeps things consistent, so you don't end up with a mess of servers and networks that you can't control. And honestly, it saves you a ton of headaches in the long run. So, whether you're building a tiny website or a massive cloud setup, Terraform's got your back.
