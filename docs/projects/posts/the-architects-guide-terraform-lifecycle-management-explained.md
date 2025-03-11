@@ -185,8 +185,8 @@ resource "aws_security_group" "allow_ssh" {
 
 # Create an EC2 Instance
 resource "aws_instance" "web" {
-  ami           = "ami-0076ac74e7710cd06"
-  instance_type = "t3.micro"
+  ami                    = "ami-0076ac74e7710cd06"
+  instance_type          = "t3.micro"
   vpc_security_group_ids = [aws_security_group.allow_ssh.id]
 
   tags = {
@@ -619,7 +619,11 @@ Receiving objects: 100% (4/4), done.
 ```
 3. List the files/dirs inside the project folder
 ```bash title="ls -alh"
-
+total 16K
+drwxrwxr-x 2 chanvi chanvi 4.0K Mar 10 17:49 .
+drwxrwxr-x 4 chanvi chanvi 4.0K Mar 10 17:49 ..
+-rw-rw-r-- 1 chanvi chanvi  102 Mar 10 17:49 .gitignore
+-rw-rw-r-- 1 chanvi chanvi  909 Mar 10 17:49 main.tf
 ```
 4. Inspect the `main.tf`
 ```bash title="cat main.tf"
