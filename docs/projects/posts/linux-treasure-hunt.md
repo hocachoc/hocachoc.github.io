@@ -51,7 +51,7 @@ Write a shell script that uses the find command, along with other Linux commands
     ```bash title="cat my_hidden_treasure.txt"
     super super secret
     ```
-    ```bash title="cat treasure_hunt.sh"
+    ```bash linenums="1" title="treasure_hunt.sh"
     #!/bin/bash
 
     # Start the timer

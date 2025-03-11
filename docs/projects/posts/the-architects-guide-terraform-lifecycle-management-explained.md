@@ -154,7 +154,7 @@ You're identifying any potential issues or conflicts that may arise from the cha
 Terraform compares the current state of your infrastructure with the desired state, showing you the changes it will make.
 
 First, imagine that you want to allow SSH inbound traffic to the instance; update the Terraform code
-```bash title="cat main.tf" hl_lines="8-27 33"
+```tf title="main.tf" linenums="1" hl_lines="8-27 33"
 # main.tf - Example Terraform Configuration
 
 # Configure the AWS Provider
@@ -626,7 +626,7 @@ drwxrwxr-x 4 chanvi chanvi 4.0K Mar 10 17:49 ..
 -rw-rw-r-- 1 chanvi chanvi  909 Mar 10 17:49 main.tf
 ```
 4. Inspect the `main.tf`
-```bash title="cat main.tf"
+```tf linenums="1" title="main.tf"
 # main.tf - Example Terraform Configuration
 
 # Configure the AWS Provider
@@ -687,4 +687,4 @@ Terraform's lifecycle is just a fancy way of saying it helps you manage your inf
 
 ## References
 
-* [Terraform State Management: A Practical Guide with Real-World Examples](./terraform-state-management-a-practical-guide-with-real-world-examples.md)
+* [Terraform State Management: A Practical Guide with Real-World Scenarios](./terraform-state-management-a-practical-guide-with-real-world-scenarios.md)
