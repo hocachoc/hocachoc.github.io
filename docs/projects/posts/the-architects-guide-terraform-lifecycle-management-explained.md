@@ -392,7 +392,7 @@ aws_security_group.allow_ssh
 ```
 
 !!! info
-    Terraform State Management is out of the scope of this project; you can try your luck by searching on this website.
+    Terraform State Management is out of the scope of this project; please patient, you can read more [at the end of this article](./the-architects-guide-terraform-lifecycle-management-explained/#references)
 
 ## 6. The Demolition: `terraform destroy`
 
@@ -680,3 +680,7 @@ Alright, so, we've talked a lot about how Terraform helps you build your digital
 And, you know, just like any good construction project, you gotta keep track of everything. That's what the state file is for – it's like your project diary. And when you're done, or if you need to tear things down, `terraform destroy` is your wrecking ball.
 
 Terraform's lifecycle is just a fancy way of saying it helps you manage your infrastructure from start to finish. It keeps things consistent, so you don't end up with a mess of servers and networks that you can't control. And honestly, it saves you a ton of headaches in the long run. So, whether you're building a tiny website or a massive cloud setup, Terraform's got your back.
+
+## References
+
+* [Terraform State Management: A Practical Guide with Real-World Examples](./terraform-state-management-a-practical-guide-with-real-world-examples.md)
