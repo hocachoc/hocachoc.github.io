@@ -39,7 +39,7 @@ In the real world, losing your state file can lead to:
 
 The state file is a JSON file that stores information about your infrastructure. It includes resource IDs, attributes, and dependencies. It's like a detailed inventory of your digital assets.
 
-Here's a simplified example of what a state file might look like:
+Here's an example (EC2 instance and SSH security group) of what a state file might look like:
 
 ```json linenums="1" title="terraform.tfstate"
 {
@@ -256,17 +256,58 @@ Popular remote backends include:
 - **Azure Storage**: Leverage Azure's storage capabilities for your state file.
 - **Terraform Cloud**: HashiCorp's managed service for state storage, collaboration, and more.
 
+```tf title="backend.tf" linenums="1" hl_lines="2"
+terraform {
+  backend "s3" {
+    bucket         = "<%= expansion('tekos-terraform-tfstate-:PROJECT-:ENV') %>"
+    key            = "<%= expansion(':TYPE_DIR/:APP/:ROLE/:MOD_NAME/:ENV/:EXTRA/:REGION/terraform.tfstate') %>"
+    region         = "<%= expansion(':REGION') %>"
+    encrypt        = true
+    dynamodb_table = "terraform_locks"
+    role_arn       = "arn:aws:iam::<%= account_ids_map %>:role/deploy-role"
+  }
+}
+```
+
 ## State Locking: Preventing Conflicts
 
 Imagine two builders trying to modify the same section of your LEGO city at the same time. Chaos ensues. State locking prevents this by ensuring that only one person can modify the state file at a time.
 
 This is typically achieved using a locking mechanism provided by your remote backend, such as DynamoDB for S3.
 
+```tf title="backend.tf" linenums="1" hl_lines="7"
+terraform {
+  backend "s3" {
+    bucket         = "<%= expansion('tekos-terraform-tfstate-:PROJECT-:ENV') %>"
+    key            = "<%= expansion(':TYPE_DIR/:APP/:ROLE/:MOD_NAME/:ENV/:EXTRA/:REGION/terraform.tfstate') %>"
+    region         = "<%= expansion(':REGION') %>"
+    encrypt        = true
+    dynamodb_table = "terraform_locks"
+    role_arn       = "arn:aws:iam::<%= account_ids_map %>:role/deploy-role"
+  }
+}
+```
+
 ## Workspaces: Managing Multiple Environments
 
 If you're managing development, staging, and production environments, Terraform workspaces are your friend. They allow you to maintain separate state files for each environment within the same configuration.
 
 It's like having separate building sites for each district of your LEGO city.
+
+```rb title="app.rb" linenums="1" hl_lines="5"
+# Docs: https://terraspace.cloud/docs/config/reference/
+Terraspace.configure do |config|
+  config.logger.level = :info
+  config.build.cache_dir = ":ENV/:BUILD_DIR"
+  config.allow.envs = ["shared","dev","stage","prod"] 
+  config.test_framework = "rspec"
+  config.all.concurrency = 5
+  config.all.exit_on_fail.plan = false
+  config.all.exit_on_fail.up = true
+  config.build.clean_cache = false
+  config.build.copy_modules = true
+end
+```
 
 ## Real-World Scenario 1: The "Whoops, I Deleted Production" Moment
 
@@ -309,7 +350,7 @@ You're working with a team, everyone's making changes, and suddenly, things star
 - **The "Smooth Sailing" Moment**: Conflicts are avoided, and everyone's happy.
 
 DynamoDB Lock Example (Simplified)
-```json linenums="1" title="terraform.tfstate" 
+```json linenums="1" title="terraform.tfstate" hl_lines="3"
 {
   "LockID": "terraform/state",
   "Locked": true,
