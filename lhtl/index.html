@@ -1,0 +1,1204 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Project-based Blog for Absolutely Dev(Sec)Ops Beginners using Learning How To Learn Techniques to help to remember knowledge/skills longer and provide 1-1 coaching on Dev(Sec)Ops career.">
+      
+      
+        <meta name="author" content="Codey Nham Chan Vi">
+      
+      
+        <link rel="canonical" href="https://hocachoc.dev/lhtl/">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.9">
+    
+    
+      
+        <title>Lhtl - Learning How To Learn Dev(Sec)Ops for Absolutely Beginners</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4af4bdda.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,300i,400,400i,700,700i%7CIBM+Plex+Sans+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"IBM Plex Sans";--md-code-font:"IBM Plex Sans Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-4XGTCTF7NS"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-4XGTCTF7NS",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-4XGTCTF7NS",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Learning How To Learn Dev(Sec)Ops for Absolutely Beginners" class="md-header__button md-logo" aria-label="Learning How To Learn Dev(Sec)Ops for Absolutely Beginners" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Learning How To Learn Dev(Sec)Ops for Absolutely Beginners
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Lhtl
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4a5 5 0 0 0 5-5 5 5 0 0 0-5-5"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="custom" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5M7 15a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Hello
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../projects/" class="md-tabs__link">
+          
+  
+    
+  
+  Projects
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../library/linux/" class="md-tabs__link">
+          
+  
+    
+  
+  Library
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Learning How To Learn Dev(Sec)Ops for Absolutely Beginners" class="md-nav__button md-logo" aria-label="Learning How To Learn Dev(Sec)Ops for Absolutely Beginners" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    Learning How To Learn Dev(Sec)Ops for Absolutely Beginners
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hello
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../projects/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Projects
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../library/linux/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Library
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#viec-hoc-la-gi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Việc Học Là Gì?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chunking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chunking
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#procrastination-and-memory" class="md-nav__link">
+    <span class="md-ellipsis">
+      Procrastination and Memory
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#renaissance-learning-and-unlocking-your-potential" class="md-nav__link">
+    <span class="md-ellipsis">
+      Renaissance Learning and Unlocking Your Potential
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+
+
+
+
+<h1 id="_1"><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="viec-hoc-la-gi">Việc Học Là Gì?<a class="headerlink" href="#viec-hoc-la-gi" title="Permanent link">&para;</a></h2>
+<details class="abstract">
+<summary>Tổng hợp ý chính</summary>
+<p>Chế độ Tập Trung, chế độ Lan Toả, Sự Chần Chờ, Pomodoro, Trí Nhớ Ngắn Hạn, Trí Nhớ Dài Hạn, Nhắc Lại Ngắt Quãng, Giấc Ngủ</p>
+<details class="success">
+<summary>Cố gắng nhớ lại trước khi xem đáp án</summary>
+<ul>
+<li>Hai chế độ tư duy - Tập Trung và Lan Toả</li>
+<li>Chế độ Tập Trung là khi tập trung toàn bộ tâm trí, sự chú ý vào một việc nào đó nhằm cố gắng hiểu hoặc làm.</li>
+<li>Chế độ Lan Toả là chế độ thoải mái, khi cơ thể và tâm trí không còn tập trung và để não bộ giải quyết hoặc tạo kết nối các mẫu kiến thức với nhau một cách ngẫu nhiên</li>
+<li>Sự chần chờ là khi bạn muốn làm việc gì khó hoặc gặp một kích thích nào đó (tin nhắn, email, âm thanh,..) thì não của bạn sẽ chuyển hướng hành động của bạn sang làm một việc dễ chịu hơn (facebook, tiktok, chơi game,...)</li>
+<li>Sử dụng Pomodoro để ứng dụng chế độ Tập Trung (25 phút) xem kẽ chế độ Lan Toả (5 phút) để tăng khả năng nhớ và hiểu, khắc phục sự chần chờ cũng như thư giãn tâm trí.</li>
+<li>Trí Nhớ Ngắn Hạn như một bản đen chất lượng kém, kiến thưc mới được ghi lên bản mờ nhạt dễ phai và biến mất.</li>
+<li>Trí Nhớ Dài Hạn như một nhà kho không lồ, kiến thực được lưu trong những gói hàng trải rộng khắp nhà kho, việc truy xuất gói hàng cần rất nhiều thời gian.</li>
+<li>Sự dụng Nhắc Lại Cách Quãng để chuyển kiến thức từ Trí Nhớ Ngắn Hạn và Trí Nhớ Dài Hạn bằng cách Tập Trung học 1 lần, nhắc lại 1 ngày sau, nhắc lại 1 tuần sau, nhăc lại &#8531;/6 tháng sau.</li>
+<li>Giấc ngủ giúp đào thải độc tố khi chúng ta thức, giúp các tế bào não kết nối dễ dàng hơn, ngoài ra, khi ngủ chúng ta sẽ rơi vào chế độ Lan Toả sẽ giúp củng cố kiến thức và hiểu vấn đề cũng như việc tìm ra giải pháp cho các vấn đề khó một cách ngẫu nhiên.</li>
+</ul>
+</details>
+</details>
+<div class="grid">
+<details class="question">
+<summary>Chế độ Tập Trung là gì?</summary>
+<details class="success">
+<summary>Cố gắng nhớ lại trước khi xem đáp án</summary>
+<p>Là khi bạn tập trung chăm chú vào một việc nào đó mà bạn đang cố gắng để hiểu hoặc tập trung làm một việc nào đó quen thuộc.</p>
+<div class="admonition example">
+<p class="admonition-title">Ví dụ</p>
+<p>Tia laser tập trung năng lượng vào một điểm duy nhất, đốt cháy mọi vật cản. Chế độ tập trung cũng vậy, giúp bạn "đánh bại" mọi vấn đề bằng sự tập trung cao độ.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Ví dụ</p>
+<p>Nhà leo núi tập trung vào từng bước chân, vượt qua mọi chướng ngại để đạt đến đỉnh cao. Chế độ tập trung giúp bạn kiên trì giải quyết vấn đề, từng bước đạt được mục tiêu.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Ví dụ</p>
+<p>Người lính bắn tỉa cần sự tập trung tuyệt đối để bắn trúng mục tiêu. Chế độ tập trung cũng vậy, giúp bạn "bắn trúng" vấn đề một cách chính xác.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Ví dụ</p>
+<p>Vận động viên chạy nước rút cần dồn hết sức lực để về đích trong thời gian ngắn nhất. Chế độ tập trung giúp bạn hoàn thành cuộc việc một cách nhanh chóng và hiệu quả.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Ví dụ</p>
+<p>Thám tử  tập trung vào từng manh mối, lần theo dấu vết để tìm ra hung thủ. Chế độ tập trung giúp bạn "phá án" những vấn đề hóc búa bằng cách phân tích và suy luận logic.</p>
+</div>
+</details>
+</details>
+<details class="question">
+<summary>Chế độ Lan Toả là gì?</summary>
+<details class="success">
+<summary>Cố gắng nhớ lại trước khi xem đáp án</summary>
+<p>Là kiểu suy nghĩ thoải mái hơn nhiều so với Chế Độ Tập Trung, trong chế độ Lan Toả các thông tin rời rạc được kết nối ngẫu nhiên với nhau tạo nên những ý tưởng sáng tạo không ngờ tới.</p>
+<div class="admonition example">
+<p class="admonition-title">Ví dụ</p>
+<p>Như "con ong" đi tìm mật, ong bay lượn từ bông hoa này sang bông hoa khác, thu thập mật ngọt. Chế độ lan toả cũng vậy, giúp bạn "thu thập" những ý tưởng mới mẻ từ nhiều nguồn khác nhau.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Ví dụ</p>
+<p>Như "người nghệ sĩ" sáng tác, không ngừng tìm kiếm cảm hứng cuộc sống xung quanh để sáng tác ra những tác phẩm nghệ thuật độc đáo. Chế độ lan toả giúp bạn "chắt lọc" những ý tưởng sáng tạo từ những trải nghiệm của bản thân.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Ví dụ</p>
+<p>Như "nhà khoa học" khám phá, không ngừng tìm tòi, khám phá những điều bí ẩn của thế giới. Chế độ lan toả giúp bạn "mở rộng" kiến thức, khám phá những lĩnh vực mới mẻ.</p>
+</div>
+</details>
+</details>
+<details class="question">
+<summary>Kết hợp hai chế độ Tập Trung và Lan Toả?</summary>
+<p>Bạn có bao giờ tập trung giải quyết một vấn đề khó, thử đủ cách nhưng vẫn chưa có giải pháp, rồi ngày hôm sau, sau một giấc ngủ ngon lành, giải pháp tự nhiên xuất hiện trong đầu bạn?</p>
+<details class="success">
+<summary>Cố gắng nhớ lại trước khi xem đáp án</summary>
+<p>Các nhà thần kinh học chỉ ra rằng trong một thời điểm bạn chỉ có thể ở một trong hai chế độ, không thể ở hai dạng thức tư duy cùng một lúc. Giống như một đồng xu, chúng ta có thể nhìn thấy hoặc mặt này hoặc mặt kia của đồng xu. Chứ không thể thấy cả hai mặt cùng một lúc. Tuy nhiên, chúng ta có thể chuyển dổi tuần tự hai dạng thức tư duy để phát huy tối đa tư duy.</p>
+<div class="admonition example">
+<p class="admonition-title">Ví dụ</p>
+<p>Như "âm và dương" của vũ trụ, chế độ Tập Trung và Lan Toả giống như âm và dương của vũ trụ, hai mặt đối lập nhưng lại bổ sung cho nhau. Khi bạn kết hợp cả hai chế độ tư duy một cách hài hoà, bạn có thể đạt được sự cân bằng và thành công trong học tập và công việc.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Ví dụ</p>
+<p>Như "hai bánh xe" của chiếc xe đạp, chế độ Tâph trung và Lan Toả giống như hai bánh xe của chiếc xe đạp, giúp nó di chuyển một cách ổn định và an toàn. Khi bạn sử dụng cả hai chế độ tư duy một cách cân bằng, bạn có thể giải quyết vấn đề một cách hiệu quả và sáng tạo.    </p>
+</div>
+</details>
+</details>
+<details class="question">
+<summary>Sử dụng chế độ Tập Trung và Lan Toả như thế nào?</summary>
+<details class="success">
+<summary>Cố gắng nhớ lại trước khi xem đáp án</summary>
+<p>Khi bạn học điều gì đó mới mẻ, đặc biệt là điều gì đó hơi khó hơn một chút tâm trí bạn cần có thể đi đi lại lại giữa hai chế độ học khác nhau. Đó là điều giúp bạn học hiệu quả. Bạn có thể nghĩ về điều đó gần tương tự như việc xây dựng sức mạnh của bạn bằng cách cử tạ. Bạn sẽ không bao giờ lập kế hoạch thi cử tạ bằng cách đợi cho đến ngày trước khi thi và dành cả ngày hôm đó làm việc như một con quái vật. Ý tôi là nó không xảy ra theo cách như vậy Để đạt được cấu trúc cơ bắp, bạn cần phải làm việc mỗi ngày một ít, dần dần để cho cơ bắp của bạn phát triển Tương tự, để xây dựng cấu trúc thần kinh, bạn cần phải làm việc mỗi ngày một ít, dần dần để bạn tự phát triển giá đỡ thần kinh để lắng nghe tâm trí của bạn, mỗi ngày một ít và đó là mưu mẹo.</p>
+<div class="admonition example">
+<p class="admonition-title">Salvador Dali</p>
+<p>Một họa sĩ siêu thực rất nổi tiếng của thế kỷ 20. Ông ta là một người hoang dã và điên khùng theo đúng nghĩa Bạn có thể thấy ông ấy với con mèo cưng của mình Babou.
+Dali đã có một kỹ thuật thú vị giúp ông ta đạt tới việc vẽ tranh siêu thực sáng tạo một cách kỳ lạ Ông ấy thư giãn trên ghế và để cho tâm trí của mình tự do thường vẫn mơ hồ nghĩ về những gì mà trước đây ông ấy đã tập trung vào. Ông ấy có chiếc chìa khóa trong tay, đu đưa nó ngay trên sàn nhà Và khi ông ta đi vào giấc mơ của mình, ngủ thiếp đi, thì chiếc chìa khóa sẽ rơi khỏi tay và tiếng động sẽ đánh thức ông ta, vừa đúng lúc mà ông ta có thể thu thập lại những mối liên hệ trong chế độ khuyếch tán đó và các ý tưởng trong tâm trí của mình Và ông ta quay trở lại chế độ tập trung mang theo những mối liên hệ mới đã có được khi trong chế độ khuyếch tán</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Thomas Edison</p>
+<p>Theo truyền thuyết, điều mà Edison thường làm là ngồi và thư giãn trên ghế, giữ vòng bi trong tay Ông thả lỏng để cho tâm trí mình tự do mặc dù thường xuyên ứng biến lại một cách thoải mái hơn nhiều với những điều mà ông đã tập trung vào trước đây.
+Khi Edison ngủ thiếp đi, vòng bi sẽ rơi xuống và chạm đất kêu vang như với Dali. Và đánh thức Edison và ông đã đi với những ý tưởng của mình từ chế độ khuyếch tán, sẵn sàng đưa chúng về chế độ tập trung và xây dựng trên đó.</p>
+</div>
+</details>
+</details>
+<details class="question">
+<summary>Kiểu học có mục tiêu/mục đích cụ thể?</summary>
+<details class="success">
+<summary>Cố gắng nhớ lại trước khi xem đáp án</summary>
+<div class="admonition example">
+<p class="admonition-title">Như chú chuột Jerry "chạy trốn" mèo Tom</p>
+<p>Jerry luôn có mục tiêu rõ ràng là "thoát khỏi" sự truy đuổi của Tom. Chú chuột này lên kế hoạch, sử dụng mọi "thủ đoạn" và tập trung cao độ để đạt được mục tiêu của mình. Kiểu học này cũng vậy, bạn xác định rõ mục tiêu học tập và "vạch ra" chiến lược cụ thể để đạt được mục tiêu đó.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Như "Luffy" tìm kiếm kho báu One Piece</p>
+<p>Luffy có mục tiêu rõ ràng là tìm ra kho báu One Piece và trở thành Vua Hải Tặc. Cậu ấy "chiêu mộ" đồng đội, "vượt qua" muôn vàn thử thách và "tiến về" đích đến của mình. Kiểu học này cũng vậy, bạn "trang bị" cho mình những kiến thức cần thiết, "vượt qua" những khó khăn và "hướng đến" mục tiêu học tập của mình.</p>
+</div>
+</details>
+</details>
+<details class="question">
+<summary>Kiểu học chỉ vì thích học?</summary>
+<details class="success">
+<summary>Cố gắng nhớ lại trước khi xem đáp án</summary>
+<div class="admonition example">
+<p class="admonition-title">Như "Naruto" luyện tập nhẫn thuật</p>
+<p>Naruto luyện tập nhẫn thuật không chỉ để trở thành Hokage mà còn vì niềm đam mê và sự yêu thích với nhẫn thuật. Cậu ấy không ngừng "khám phá", "thử nghiệm" và "phát triển" những kỹ năng mới. Kiểu học này cũng vậy, bạn học hỏi vì niềm vui và sự hứng thú, không đặt nặng vấn đề mục tiêu.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Như "Goku" luyện tập võ thuật</p>
+<p>Goku luyện tập võ thuật không chỉ để trở nên mạnh mẽ hơn mà còn vì niềm đam mê và sự yêu thích với võ thuật. Kiểu học này cũng vậy, bạn học hỏi vì "thích thú" với quá trình chinh phục kiến thức và "thể hiện" khả năng của bản thân.</p>
+</div>
+</details>
+</details>
+<details class="question">
+<summary>Sự chần chờ là gì?</summary>
+<details class="success">
+<summary>Cố gắng nhớ lại trước khi xem đáp án</summary>
+<div class="admonition example">
+<p class="admonition-title">Như "cây lười" đâm chồi</p>
+<p>Cây lười không chịu "vươn mình" đón ánh nắng, cứ "ì ạch" mãi một chỗ. Chế độ chần chừ cũng vậy, khiến bạn "mắc kẹt" trong "vũng lầy" trì hoãn, không thể "bứt phá" để đạt được mục tiêu.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Như "con mèo" ngủ quên</p>
+<p>Con mèo "chần chừ" không chịu "bắt chuột", cuối cùng "bỏ lỡ" bữa ăn ngon. Chế độ chần chừ cũng vậy, khiến bạn "mất đi" những cơ hội "tốt đẹp", "hối tiếc" vì đã không "nắm bắt" kịp thời.</p>
+</div>
+</details>
+</details>
+<details class="question">
+<summary>Tại sao bạn lại chần chờ?</summary>
+<details class="success">
+<summary>Cố gắng nhớ lại trước khi xem đáp án</summary>
+<p>Khi bạn bắt đầu làm một việc bạn thật sự không muốn làm, dường như bạn kích hoạt những vùng của não bộ có liên quan đến đau. Một cách tự nhiên, não của bạn cố tìm một cách để ngưng kích thích đau bằng cách chuyển sự chú ý của bạn qua một việc mà bạn thường cảm thấy hạnh phúc hơn (lướt facebook, tiktok, chơi game,...)
+Tuy nhiên, các nhà nghiên cứu phát hiện rằng không lâu sau khi người ta bắt đầu thực sự làm cái mà họ không thích, sự đau/khó chịu về thần kinh biến mất.</p>
+</details>
+</details>
+<details class="question">
+<summary>Pomodoro chinh phục sự chần chờ?</summary>
+<details class="success">
+<summary>Cố gắng nhớ lại trước khi xem đáp án</summary>
+<p>Pomodoro là phương pháp quản lý thời gian, về cơ bản, Pomodoro kết hợp sử dụng chế độ Tập Trung và chế độ Lan Toả trong một khoảng thời gian ngắn, thường là 25 phút (chế độ Tập Trung) và 5 phút (chế độ Lan Toả). Sau mỗi 4 Pomodoro, bạn sẽ có một khoảng nghỉ dài hơn, khoảng 15-20 phút.</p>
+<p>Kỹ thuật Pomodoro có thể giúp bạn "chống lại" sự chần chừ vì:
+* <strong>Chia nhỏ công việc</strong>: Thay vì phải đối mặt với một công việc lớn và phức tạp, Pomodoro chia nhỏ nó thành các phần nhỏ hơn, dễ quản lý hơn. Điều này giúp bạn cảm thấy ít "ngại" hơn khi bắt đầu và giảm nguy cơ bị "choáng ngợp" bởi công việc.
+* <strong>Tạo động lực</strong>: Mỗi pomodoro là một "thử thách" nhỏ mà bạn có thể dễ dàng vượt qua. Khi hoàn thành mỗi pomodoro, bạn sẽ cảm thấy "thành công" và có thêm động lực để tiếp tục.
+* <strong>Tăng cường sự tập trung</strong>: Thời gian làm việc ngắn (25 phút) giúp bạn tập trung cao độ vào công việc, tránh bị xao nhãng bởi những yếu tố bên ngoài.
+* <strong>Giảm căng thẳng</strong>: Các khoảng nghỉ ngắn giúp bạn thư giãn, giảm căng thẳng và "làm mới" tinh thần. Điều này giúp bạn duy trì sự tập trung và năng suất làm việc trong suốt cả ngày.
+* <strong>Tạo thói quen</strong>: Pomodoro giúp bạn tạo thói quen làm việc và nghỉ ngơi đều đặn, từ đó giúp bạn quản lý thời gian hiệu quả hơn và giảm thiểu sự chần chừ.</p>
+<div class="admonition example">
+<p class="admonition-title">Như "cây cà chua" chín đỏ</p>
+<p>Pomodoro là "quả cà chua" chín đỏ, tượng trưng cho sự "tập trung" và "năng suất". Khi bạn "hái" được nhiều quả pomodoro, có nghĩa là bạn đã hoàn thành nhiều công việc một cách hiệu quả.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Như việc xây một bức tường</p>
+<p>Khi bạn học, điều mà bạn muốn làm là học được cái gì đó. Hãy hết sức cố gắng học điều đó bằng cách tập trung chăm chú (viên gạch). Sau đó nghỉ giải lao hoặc ít nhất là thay đổi sự tập trung của bạn vào điều gì đó khác một lát (vữa/hồ). Trong thời gian dường như thư dãn này chế độ khuyếch tán ở não bạn có cơ hội tiếp tục làm việc ở mức nền tảng và giúp bạn hiểu khái niệm của bạn. Vữa thần kinh của bạn, của bạn, theo một nghĩa nào đó có cơ hội khô lại. Nếu không làm như vậy, nếu thay vào đó bạn lại học một cách nhồi nhét, thì cơ sở kiến thức của bạn sẽ trông giống như một mớ bòng bong với mọi thứ lẫn lộn và một nền tảng yếu kém.</p>
+</div>
+</details>
+</details>
+<details class="question">
+<summary>Trí nhớ dài hạn là gì?</summary>
+<details class="success">
+<summary>Cố gắng nhớ lại trước khi xem đáp án</summary>
+<div class="admonition example">
+<p class="admonition-title">Như "ổ cứng HDD" dung lượng siêu lớn</p>
+<p>Chứa đựng toàn bộ dữ liệu tuy nhiên việc truy xuất thông tin khó và chậm.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Như "nhà kho" không lồ</p>
+<p>Như một nhà kho khổng lồ, nơi chứa rất nhiều kiện hàng, mỗi kiện hàng là một mẫu kiến thức, ký ức của chúng ta. Muốn lấy một kiện hàng từ kho sẽ cần thời gian tìm kiếm và mang ra.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Như "thư viện" siêu lớn</p>
+<p>Như một thư viện, nơi chứa rất nhiều sách thuộc rất nhiều chủ đề, mỗi cuốn sách là một mâũ kiến thức và ký ức của chúng ta. Muốn lấy một cuốn sách từ thư viện, ta cần tìm kiếm và đi tới khu vực để sách và lấy xuống đọc.</p>
+</div>
+</details>
+</details>
+<details class="question">
+<summary>Trí nhớ ngắn hạn là gì?</summary>
+<details class="success">
+<summary>Cố gắng nhớ lại trước khi xem đáp án</summary>
+<p>Theo các nhà nghiên cứu thì mỗi người có 4 cái khe trong bộ nhớ ngắn hạn, mỗi khe có thể kết nối tới một mẫu kiến thức nào đó.
+!!! example Như "bảng đen" cũ
+    Như một cái bảng đen cũ, các thông tin ghi trên bảng đen thường rất mờ nhạt và dễ bị xoá mất.
+!!! example Như "mẫu giấy nháp" dùng một lần
+    Mẩu giấy nháp dùng để "ghi lại" thông tin tạm thời, sau đó sẽ "vứt bỏ". Trí nhớ ngắn hạn cũng vậy, "lưu trữ" thông tin trong "một khoảng thời gian ngắn", sau đó sẽ "quên" đi để "nhường chỗ" cho thông tin mới.
+!!! example Như "não cá vàng" 7 giây
+    Người ta thường nói cá vàng chỉ có trí nhớ 7 giây. Trí nhớ ngắn hạn cũng vậy, "lưu giữ" thông tin trong "thời gian rất ngắn", nếu không được "ôn lại" sẽ "quên ngay".</p>
+</details>
+</details>
+<details class="question">
+<summary>Chuyển trí nhớ ngắn hạn thành trí nhớ lâu dài?</summary>
+<details class="success">
+<summary>Cố gắng nhớ lại trước khi xem đáp án</summary>
+<p>Trí nhớ lâu dài là quan trọng bởi vì nó là nơi bạn lưu giữ những khái niệm và kỹ thuật cơ bản thường được có trong bất cứ điều gì mà bạn đang học. Khi bạn gặp phải điều gì mới, bạn thường sử dụng trí nhớ ngắn hạn để xử lý nó. Nếu bạn muốn chuyển thông tin đó thành trí nhớ lâu dài của bạn, thì thường phải mất thời gian và rèn luyện. Để giúp quá trình này, hãy dùng một kỹ thuật được gọi là Nhắc Lại Cách Quãng 
+!!! example Như "gieo mầm" và "chăm sóc" cây
+    Trí nhớ ngắn hạn giống như "hạt giống" mới gieo, cần được "chăm sóc" và "tưới tắm" thường xuyên để "nảy mầm" và "phát triển" thành "cây cổ thụ" vững chắc (Trí nhớ lâu dài).
+!!! example Như "tìm đường" tới công ty mới
+    Trí nhớ ngắn hạn giống như ngày đầu bạn tìm đường tới công ty mới, lúc đầu bạn còn cần xem Google Maps,tuy nhiên sau vài ngày, bạn sẽ "quen" đường tới công ty một cách tự nhiên và như một thói quen.</p>
+</details>
+</details>
+<details class="question">
+<summary>Nhắc Lại Cách Quãng?</summary>
+<details class="success">
+<summary>Cố gắng nhớ lại trước khi xem đáp án</summary>
+<p>Kỹ thuật này gồm việc nhắc lại điều mà bạn đang cố ghi nhớ, nhưng điều bạn muốn làm là để cách quãng việc nhắc lại này nhiều hơn. Nhắc lại một từ vựng mới hoặc một kỹ thuật giải quyết vấn đề, ví dụ, qua một số ngày. Việc kéo đài sự rèn luyện của bạn qua vài ngày quả là có tạo ra sự khác biệt.
+Nghiên cứu đã cho thấy nếu bạn cố gắng gắn các thứ vào trí nhớ của bạn bằng cách nhắc lại điều gì đó 20 lần trong một buổi tối, ví dụ, nó sẽ không dính được tốt như là nếu bạn rèn luyện ngần ấy lần trong vài ngày. Điều này là giống như việc xây tường gạch mà chúng ta đã thấy trước đây. Nếu bạn không dành thời gian cho vữa khô, tức là, thời gian để cho những mối kết nối khái quảt hình thành và củng cố thì bạn sẽ không có một cấu trúc tốt.
+!!! example Như "tưới nước" cho cây
+    Bạn không thể tưới 20 lần trong một tối và mong cây sẽ lớn khoẻ, ngược lại cây sẽ bị úng nước và chết ngột. Thay vào đó, mỗi ngày vào một thời điểm bạn sẽ tới 1 lần và quan sát cây lớn lên từng ngày. Kỹ thuật Nhắc Lại Cách Quãng cũng vậy, mỗi ngày bạn ôn lại kiến thức 1 lần trong nhiều ngày thì kiến thức sẽ được in đậm vào Trí Nhớ Dài Hạn.
+!!! example Như "tìm đường" tới công ty mới
+    Con đường đi đến công ty mới cần được "đi lại" nhiều lần để "khắc sâu" vào trí nhớ. Kiến thức cũng vậy, cần được "ôn lại" nhiều lần, "đi lại" kiến thức thường xuyên để "ghi nhớ" lâu dài.</p>
+<div class="admonition example như">
+<p class="admonition-title">xây tưởng gạch</p>
+<p>Nếu chỉ trong một ngày bạn xây toàn bộ một bức tường cao thì bước tường có thể bị đổ thành một mớ hỗn độn, thay vào đó, bạn xây một phần và đợi cho vữa/hồ khô sau đó xây tiếp thì bức tường sẽ vững chắc.</p>
+</div>
+</details>
+</details>
+<details class="question">
+<summary>Tại sao Nhắc Lại Cách Quãng hiệu quả?</summary>
+<details class="success">
+<summary>Cố gắng nhớ lại trước khi xem đáp án</summary>
+<p>Nhắc lại cách quãng là một kỹ thuật học tập hiệu quả, dựa trên nguyên tắc "quên lãng" của não bộ. Thay vì "nhồi nhét" kiến thức trong một lần, bạn sẽ "chia nhỏ" quá trình học tập và "ôn lại" kiến thức theo những "khoảng thời gian" khác nhau.
+* <strong>Tận dụng "quên lãng"</strong>: Khi bạn ôn lại kiến thức ngay trước khi quên, não bộ sẽ "củng cố" lại trí nhớ và "chuyển" thông tin từ trí nhớ ngắn hạn sang trí nhớ dài hạn.
+* <strong>Tiết kiệm thời gian:</strong> Thay vì phải "học lại" từ đầu, bạn chỉ cần "ôn lại" những điểm chính, giúp tiết kiệm thời gian và công sức.
+* <strong>Tăng cường trí nhớ</strong>: Nhắc lại cách quãng giúp bạn "ghi nhớ" kiến thức lâu dài hơn, "sử dụng" chúng một cách linh hoạt và hiệu quả.</p>
+</details>
+</details>
+<details class="question">
+<summary>Não chúng ta sẽ làm gì khi chúng ta đang ngủ?</summary>
+<details class="success">
+<summary>Cố gắng nhớ lại trước khi xem đáp án</summary>
+<p>Việc thức dậy thuần tuý tạo ra các chất độc hại trong não, muốn loại bỏ các chất độc hại trong não đơn giản là chúng ta chỉ cần ngủ.</p>
+<div class="admonition example như dòng kênh đầy rác ở một khu ổ chuột">
+<p class="admonition-title">Example</p>
+<p>Hai bên bờ kè tượng trung cho các tế bào não, còn rác là chất được trong não. Khi ngủ, các tế bào não được co lại làm tăng khoảng cách giữa các tế bào não, như việc chúng ta mở rộng kênh ra, lúc này thì rác sẽ không còn tích tụ nữa mà sẽ được trôi đi, giữ cho kênh sạch sẽ.</p>
+</div>
+<div class="admonition example như con đường đông đúc xe">
+<p class="admonition-title">Example</p>
+<p>Cũng tương tự khi bạn hình dung dòng xe đông đúc trên một con đường, nếu chúng ta gia tăng khoảng cách hai bên lề đường thì con đường sẽ thông thoáng hơn.</p>
+</div>
+</details>
+</details>
+<details class="question">
+<summary>Thiếu ngủ sẽ có tác hại gì?</summary>
+<details class="success">
+<summary>Cố gắng nhớ lại trước khi xem đáp án</summary>
+<p>Việc ngủ nghe có vẻ lãng phí thời gian, thực tế ngủ đủ giấc giúp não bạn sạch sẽ và khoẻ mạnh. Tưởng tưởng khi bạn thiếu ngủ, não bạn chứa đầy độc tố trong não, các độc tố sẽ cản trợ việc kết nối giữa các tế bào não với nhau làm cho bạn khó tập trung hoặc giải quyết các vấn đề khó.
+Ngoài ra, ngủ quá ít trong thời gian dài cũng các triệu chứng như đau đầu, trầm cảm, đau tim, tiểu đường và đơn gian là bạn sẽ chết sớm.
+Bên cạnh đó, giấc ngủ không những tẩy sạch các độc tố trong não mà giấc ngủ còn đóng vai trò quan trọng trong trí nhớ và việc học.</p>
+</details>
+</details>
+<details class="question">
+<summary>Giấc ngủ trong trí nhớ và việc học?</summary>
+<details class="success">
+<summary>Cố gắng nhớ lại trước khi xem đáp án</summary>
+<p>Có vẻ trong khi ngủ, não bạn sắp xếp ngăn nắp các ý tưởng và khái niệm mà bạn nghĩ đến hoặc đang học. Não xoá đi những phần ít quan trọng của trí nhớ và đồng thời củng cố những vùng mà bạn đang cần học và muốn nhớ.
+Giấc ngủ cũng được biết là làm tăng khả năng trong việc giải quyết các vấn đề khó và hiểu điều mà bạn đang cố học. Khi ngủ, bạn hoàn toàn chấm dứt trạng thái ý thức và chuyển sang trạng thái tiềm thức nơi mà các phần não khác hoạt động mạnh khi bạn đang ngủ. Và đó cũng là kết quả của chế độ Lan Toả hoạt động, tuy nhiên, bạn phải thật sự ở chế độ Tập Trung trước đó. 
+Nếu bạn tập trung học ngay trước khi ngủ trưa hoặc đi ngủ vào buổi tối thì bạn sẽ tăng cơ hội nằm mơ về nó. Càng tâm niệm về việc mơ về nó thì bạn càng tăng khả năng mơ về nó. Mơ về những gì bạn đang học có thể làm tăng cường khả năng hiểu của bạn về nó. Cho nên muốn nhớ và hiểu sâu thì sau khi học tâp trung bạn nên chợp mắt một chút.</p>
+</details>
+</details>
+</div>
+<h2 id="chunking">Chunking<a class="headerlink" href="#chunking" title="Permanent link">&para;</a></h2>
+<div class="grid">
+<details class="question">
+<summary>Chunk và Chunking là gì?</summary>
+<details class="success">
+<summary>Cố gắng nhớ lại trước khi xem đáp án</summary>
+<p>Chunk nghĩa là cụm/mẫu/đoạn từ ngữ cảnh, còn Chunking nghĩa là việc học theo cụm/mẫu/đoạn thông qua ngữ cảnh.
+Khi bạn tập trung chú ý vào một thứ gì đó thì gần như bạn có 1 con bạch tuộc với 4 xúc tu trượt qua 4 khe của bộ nhớ ngắn hạn giúp bạn kết nối với những thông tin mà bạn có thể có trong nhiều phần của não.
+Tập trung sự chú ý để bạn kết nối các phần của não để nối các ý tưởng với nhau là một phần quan trọng trong chế độ tập trung của việc học. Nó cũng thường là điều giúp bạn bắt đầu hình thành một Chunk.
+Điều này khác với các kết nối ngẫu nhiên trong chế độ Lan Toả.</p>
+<div class="admonition failure">
+<p class="admonition-title">Tức giận, căng thẳng, hoặc sợ hãi</p>
+<p>Thú vị là khi bạn bị căng thẳng, con bạch tuộc chú ý của bạn bắt đầu mất khả năng tạo ra một số kết nối đó. Đó là tại sao não bạn không có vẻ làm việc ổn khi bạn tức giận, căng thẳng, hoặc sợ hãi.</p>
+</div>
+</details>
+</details>
+<details class="question">
+<summary>Làm sao để tinh thông một lĩnh vực?</summary>
+<details class="success">
+<summary>Cố gắng nhớ lại trước khi xem đáp án</summary>
+<p>Một trong những bước đầu tiên để đạt tới sự tinh thông trong các chủ đề học thuật là tạo ra các đoạn khái niệm, những bước nhảy trí tuệ kết nối các bit thông tin phân tán thông qua ý nghĩa. Khái niệm về các đoạn thần kinh cũng áp dụng trong thể thao, âm nhạc khiêu vũ, thật sự là về bất cứ điều gì mà con người có thể đạt được tới.</p>
+<p>Về cơ bản, một đoạn nghĩa là một mạng lưới các tế bào thần kinh được sử dụng để kích thích cùng nhau sao cho bạn có thể nghĩ một ý hoặc thực hiện một hành động một cách trôi chảy và hiệu quả. Nhắc lại và thực hành tập trung, sáng tạo ra những dấu vết trí óc mạnh mẽ, giúp bạn tạo ra các đoạn.</p>
+<p>Con đường tới sự tinh thông được xây dựng từng tí một, những đoạn nhỏ có thể trở thành lớn hơn, và mọi sự tinh thông dùng làm cơ sở cho những giải thích sáng tạo hơn khi bạn dần trở nên làm chủ các tài liệu. Nói cách khác, như bạn sẽ thấy sau đây thực hành và nhắc lại trong việc xây dựng các đoạn không phải là tất cả những gì mà bạn cần để trở thành một người thực sự làm chủ những tài liệu mà bạn học. Việc phân đoạn giúp não bạn làm việc hiệu quả hơn. Một khi bạn phân đoạn một ý tưởng, một khái niệm hoặc một hành động bạn không biết cần phải nhớ mọi chi tiết cơ bản nhỏ nhất. Bạn đã có ý tưởng chính, đoạn suy nghĩ, và điều đó là đủ.
+!!! example Như "đánh răng" mỗi sáng thức dậy
+    Bạn chỉ nghĩ đơn giản, như là, tôi sẽ đánh răng, nhưng thật kinh ngạc khi bạn nhận ra cả một chuỗi thủ tục phức tạp gồm những hoạt động cơ bản diễn ra với một đoạn suy nghĩ đơn giản đó.</p>
+</details>
+</details>
+<details class="question">
+<summary>Làm sao để hình thành một Chunk?</summary>
+<details class="success">
+<summary>Cố gắng nhớ lại trước khi xem đáp án</summary>
+<ol>
+<li><strong>Bước 1</strong>: tập trung toàn bộ sự chú ý của bạn vào những thông tin mà bạn muốn hình thành Chunk.</li>
+<li>
+<p><strong>Bước 2</strong>: hiểu ý tưởng cơ bản mà bạn đang cố gắng hình thành Chunk, dù đó là hiểu một khái niệm hoặc một bản chất của một loại vấn đề toán học cụ thể.</p>
+<div class="admonition notes">
+<p class="admonition-title">Tổng hợp ý chính</p>
+<p>Tìm ra ý tưởng chính của các ý tưởng</p>
+</div>
+<p>Tuy nhiên, việc hiểu cách giải quyết một vấn đề không có nghĩa là bạn có thể tự giải quyết được vấn đề. Việc gấp sách lại và tự kiểm tra xem liệu bạn, tự bạn có thể giải quyết được vấn đề mà bạn nghĩ bạn hiểu không sẽ làm tăng tốc việc học của bạn. Bạn phải thực sự làm điều đó.</p>
+<div class="admonition example">
+<p class="admonition-title">Nhìn người khác vẽ không có nghĩa bạn thực sự có thể tạo ra tác phẩm đó.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Nghe một bài hát không có nghĩa là bạn thực sự hát được bài đó.</p>
+</div>
+<p>Chỉ vì bạn nhìn thấy nó, hay thậm chí là bạn hiểu nó, điếu đó không có nghĩa là bạn có thể thực sự làm được nó. Chỉ có tự bạn làm mới giúp tạo ra những mẫu thần kinh làm nền tảng cho sự tinh thông thực sự</p>
+</li>
+<li>
+<p><strong>Bước 3</strong>: kiếm được ngữ cảnh, để biết được khi nào sử dụng và khi nào không sử dụng cách giải quyết vấn đề.</p>
+<div class="admonition notes">
+<p class="admonition-title">Lướt nhanh hai phút hình ảnh và mục lục một chương trước khi bắt đâu học để nắm được bức tranh toàn cảnh</p>
+</div>
+<p>Nhũng loại hoạt động này có thể giúp bạn biết chổ sắp đặt Chunk mà bạn đang xây dựng, làm sao để các Chunk liên quan tới nhau.</p>
+</li>
+</ol>
+<div class="admonition example">
+<p class="admonition-title">Học các môn nghệ thuật</p>
+<p>Như tập đánh một bản nhạc ghitar, trước tiên, đại đa số sẽ nghe bản nhạc một lần hoặc xem ai đó biểu diễn một lần, rồi bạn bắt đâu tập từng đoạn nhỏ đến khi thành thục rồi chuyển qua đoạn khác, cuối cùng bạn dần dần nối các đoạn nhỏ đã tập và đánh một bản nhạc hoàn chỉnh. Tương tự như việc tập hát, tập nhảy, vẽ,...</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Học các môn thể thao</p>
+<p>Như tập chơi bóng đá, trước tiên, các bạn sẽ tập từng kỹ năng nhỏ từ việc giữ bóng, dắt bóng, chuyền bóng hoặc sút. Sau đó bạn sẽ tập những kỹ năng phối hợp để có thể vào sân thi đấu.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Học Toán và Khoa Học</p>
+<p>Thường thì mỗi vấn đề hoặc khái niệm sẽ đi với đáp án có sẵn, việc bạn cần làm là tìm hiểu tại sao mỗi bước lại làm như vậy. Tuy nhiên lại không có gì nói về sự kết nối giữa các bước. Tức là về việc  tại sao bước cụ thể này lại là điều tiếp theo mà bạn nên làm như vậy. Cách học máy móc như vậy cần tránh, bạn cần hiểu được bước tranh tổng thể và sáng tạo cách tới đích thông qua từng bước cụ thể.</p>
+</div>
+</details>
+</details>
+<details class="question">
+<summary>Tầm quan trọng của việc nhớ lại?</summary>
+<details class="success">
+<summary>Cố gắng nhớ lại trước khi xem đáp án</summary>
+<p>Nghiên cứu của Karpicke cho thấy việc nhớ lại sau khi nghiên cứu một tài liệu sau đó nghiên cứu lại và nhớ lại nó một lần nữa. Đó là, họ cố đã cố gắng nhớ những ý chính và điều này giúp nhớ lâu hơn và học sâu hơn.</p>
+<p>Việc lập bản đồ khái niệm, vẽ các biểu đồ chỉ ra quan hệ các khái niệm mới là cách tốt để tổng hợp tuy nhiên nếu các khối cơ bản chưa được nhúng vào trong não, thì các biểu đồ không thể hoạt động</p>
+<div class="admonition example">
+<p class="admonition-title">Như em bé tập chạy trong khi chưa biết bò</p>
+</div>
+</details>
+</details>
+<details class="question">
+<summary>Ảo Tưởng về Năng Lực trong học tập?</summary>
+<details class="success">
+<summary>Cố gắng nhớ lại trước khi xem đáp án</summary>
+<p>Đó là khi bạn sử dụng phương pháp học không hiệu quả, chúng đánh lừa tâm trí của bạn nghĩ rằng bạn đang học một cái gì đó, trong khi bạn chỉ chủ yếu là lãng phí thời gian của mình.</p>
+<p>Nguyên nhân mà học sinh vẫn thích tiếp tục đọc lại những chú thích của mình hoặc vở, là vì khi họ có sách hoặc GOOGLE mở ngay trước mặt họ, chúng cung cấp ảo tưởng rằng tài liệu cũng nằm trong đầu họ. Nhưng không phải thế bởi vì nó có thể dễ đang hơn để nhìn vào một cuốn sách thay vì nhớ lại, học sinh khăng khăng giữ ảo tưởng học bằng cách mà đơn giản là không hiệu quả cho lắm.</p>
+</details>
+</details>
+<details class="question">
+<summary>Kiểm tra nhỏ và giá trị của phạm lỗi</summary>
+<details class="success">
+<summary>Cố gắng nhớ lại trước khi xem đáp án</summary>
+<p>Trong một vài ý nghĩa, đó chính là những gì mà việc nhớ lại đang thực hiện. cho phép bạn biết được bạn có thực sự nắm chắc một ý tưởng. Nếu bạn mắc lỗi trong việc bạn đang làm, đó thực sự là một việc tốt. Bạn muốn cố gắng không lặp lại lỗi, dĩ nhiên rồi, nhưng lỗi rất đáng giá để mắc phải trong những bài tự kiểm tra nhỏ của bạn trước khi làm bài kiểm tra nâng cao thực sự. Bởi vì chúng cho phép bạn sửa chữa và bạn lấp đầy lỗ hổng kiến thức từ từ. Lỗ sai giúp sưả lỗi suy nghĩ của bạn, vì thế bạn có thể học tốt hơn và làm tốt hơn.</p>
+</details>
+</details>
+<details class="question">
+<summary>Thay đổi địa điểm học tập</summary>
+<details class="success">
+<summary>Cố gắng nhớ lại trước khi xem đáp án</summary>
+<p>Theo nghiên cứu cho thấy nếu bạn chuẩn bị một kỳ thi thường sẽ tổ trước trong phòng thi, việc bạn học trước đó ở một nơi nhất định có thể sẽ neo cho bạn về địa điểm học và khi bạn vào phòng thi sẽ tạo thành rào cản tâm lý do bạn đã neo địa điểm học tập, một cách giải quyết là đừng để neo vào một địa điểm nhất định, bạn có thể thay đổi địa điểm học tập từ sở thích của mình.</p>
+</details>
+</details>
+<details class="question">
+<summary>Các phương pháp học tập ít hiệu quả?</summary>
+<details class="success">
+<summary>Cố gắng nhớ lại trước khi xem đáp án</summary>
+<p>Việc học thuộc lòng hoặc đọc đi đọc lại thụ động nhiều lần toàn bộ tài liệu.</p>
+</details>
+</details>
+<details class="question">
+<summary>Ứng dụng hệ thống Flashcards trong việc học?</summary>
+<details class="success">
+<summary>Cố gắng nhớ lại trước khi xem đáp án</summary>
+<p>Một mặt ghi câu hỏi và mặt kia ghi câu trả lời. Cố gắng nhớ lại trước khi xem đáp án. Sau đó kiểm tra nhớ lại với đáp án. 
+Lên lịch cách 1 ngày, 1 tuần , &#8531;/6 tháng nhắc lại (Nhắc Lại Ngắt Quãng)</p>
+</details>
+</details>
+<details class="question">
+<summary>Acetylcholine?</summary>
+<details class="success">
+<summary>Cố gắng nhớ lại trước khi xem đáp án</summary>
+<ol>
+<li>Là chất dẫn truyền thần kinh ở cả hệ thống thần kinh trung ương và thần kinh ngoại vi.</li>
+<li>Là hormone nội tiết, được tổng hợp và tiết ra bởi các tế bào biểu mô phế quản đường thờ.</li>
+</ol>
+<p>Acetylcholine đóng vai trò hình thành động lực, kích thích, sự chú ý, học tập và trí nhớ, và giấc ngủ REM (giai đoạn ngủ mơ) giai đoạn quan trọng cho việc củng cố trí nhớ và học tập.</p>
+<div class="admonition example">
+<p class="admonition-title">Bệnh Alzheimer</p>
+<p>Do suy giảm đường cholinergic nghiêm trọng trong thần kinh trung ương có liên quan khởi phát bệnh Ahzheimer.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Một số loại thuốc trừ sâu và khí tể</p>
+<p>Thuốc và các chất làm gián đoạn chức ngăn Acetylcholine có thể có tác động tiêu cực đến cơ thể và thậm chí dẫn đến tử vong.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Nọc độc của nhện Goá phụ đen</p>
+<p>Nọc độc của nhện góa phụ đen hoạt động bằng cách giải phóng acetylcholine. Khi bị cắn, nồng độ acetylcholine của nạn nhân tăng cao đột ngột, dẫn đến co thắt cơ, tê liệt và thậm chí tử vong.</p>
+</div>
+</details>
+</details>
+<details class="question">
+<summary>Tăng cường Acetylcholine một cách tự nhiên?</summary>
+<details class="success">
+<summary>Cố gắng nhớ lại trước khi xem đáp án</summary>
+<ul>
+<li><strong>Chế độ ăn uống lành mạnh</strong>: Ăn các thực phẩm giàu choline, một chất dinh dưỡng cần thiết để sản xuất acetylcholine, như trứng, thịt, cá, các loại đậu và rau xanh.</li>
+<li><strong>Tập thể dục thường xuyên</strong>: Hoạt động thể chất giúp tăng cường sản xuất acetylcholine và cải thiện chức năng não bộ.</li>
+<li><strong>Ngủ đủ giấc</strong>: Giấc ngủ giúp não bộ sản xuất acetylcholine và củng cố trí nhớ.</li>
+<li><strong>Học tập và thử thách bản thân</strong>: Học tập những điều mới mẻ và thử thách bản thân trong các hoạt động trí óc giúp tăng cường sản xuất acetylcholine và cải thiện chức năng nhận thức.</li>
+</ul>
+</details>
+</details>
+<details class="question">
+<summary>Dopamine?</summary>
+<details class="success">
+<summary>Cố gắng nhớ lại trước khi xem đáp án</summary>
+<p>Là chất dẫn truyền thần kinh quan trọng, đóng vai trò quan trọng trong nhiều chức năng của não bộ, bao gồm học tập.</p>
+<p>Dopamine đóng vai trò quan trọng trong việc học tập, đặc biệt là học tập dựa trên phần thưởng. Khi chúng ta học được điều gì đó mới mẻ hoặc đạt được mục tiêu học tập, não bộ sẽ giải phóng dopamine, tạo ra cảm giác hạnh phúc và khoái cảm. Cảm giác này sẽ thúc đẩy chúng ta tiếp tục học tập và tìm kiếm những kiến thức mới.</p>
+</details>
+</details>
+<details class="question">
+<summary>Tăng cường Dopamine một cách tự nhiên?</summary>
+<details class="success">
+<summary>Cố gắng nhớ lại trước khi xem đáp án</summary>
+<ul>
+<li><strong>Đặt mục tiêu học tập cụ thể và đạt được chúng</strong>: Khi bạn đạt được mục tiêu, não bộ sẽ giải phóng dopamine, tạo động lực cho bạn tiếp tục học tập.</li>
+<li><strong>Học tập theo nhóm hoặc tham gia các hoạt động học tập thú vị</strong>: Học tập cùng với bạn bè hoặc tham gia các hoạt động học tập thú vị sẽ giúp bạn cảm thấy hứng thú và vui vẻ hơn, từ đó tăng cường dopamine.</li>
+<li><strong>Sử dụng các phương pháp học tập hiệu quả</strong>: Khi bạn học tập hiệu quả, bạn sẽ cảm thấy tự tin và đạt được kết quả tốt hơn, từ đó tăng cường dopamine.</li>
+<li><strong>Ngủ đủ giấc và tập thể dục thường xuyên</strong>: Giấc ngủ và tập thể dục giúp não bộ sản xuất dopamine một cách tự nhiên.      </li>
+</ul>
+</details>
+</details>
+<details class="question">
+<summary>Serotonin?</summary>
+<details class="success">
+<summary>Cố gắng nhớ lại trước khi xem đáp án</summary>
+<p>Serotonin là một chất dẫn truyền thần kinh quan trọng, đóng vai trò then chốt trong việc điều chỉnh tâm trạng, giấc ngủ, sự thèm ăn, hỗ trợ tiêu hoá và đông máu.</p>
+<p>Serotonin cũng có tác động đến cuộc sống xã hội.</p>
+<div class="admonition example">
+<p class="admonition-title">Khỉ đầu đàn có mức Serotonin cao nhất, những con khỉ ở thứ hạng thấp có mức Serotonin thấp nhất</p>
+</div>
+<p>Serotonin cũng liên quan đến hành vi liều lĩnh.</p>
+<div class="admonition example">
+<p class="admonition-title">Những con khỉ với mức Serotonin thấp thường có nhiều hành vi liều lĩnh hơn nhưng con có mức Serotonin cao</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Những tù nhân vì tội bạo lực thường có mức độ Serotonin thấp nhất trong xã hội</p>
+</div>
+</details>
+</details>
+<details class="question">
+<summary>Tăng cường Serotonin một cách tự nhiên?</summary>
+<details class="success">
+<summary>Cố gắng nhớ lại trước khi xem đáp án</summary>
+<ul>
+<li><strong>Tiếp xúc với ánh sáng mặt trời</strong>: Ánh sáng mặt trời giúp cơ thể sản xuất serotonin. Hãy dành thời gian mỗi ngày để ra ngoài trời và tận hưởng ánh nắng.</li>
+<li><strong>Tập thể dục thường xuyên</strong>: Hoạt động thể chất giúp tăng cường sản xuất serotonin và cải thiện tâm trạng.</li>
+<li><strong>Chế độ ăn uống lành mạnh</strong>: Ăn các thực phẩm giàu tryptophan, một loại axit amin cần thiết để sản xuất serotonin, như thịt, cá, trứng, sữa, các loại hạt và đậu.</li>
+<li><strong>Thiền định và thư giãn</strong>: Các kỹ thuật thư giãn như thiền định, yoga, hít thở sâu có thể giúp tăng cường serotonin và giảm căng thẳng.</li>
+</ul>
+</details>
+</details>
+<details class="question">
+<summary>Hội chứng Anhedonia?</summary>
+<details class="success">
+<summary>Cố gắng nhớ lại trước khi xem đáp án</summary>
+<p>Anhedonia là thuật ngữ dùng để mô tả sự mất hứng thú với cuộc sống, các hoạt động cá nhân từng yêu thích, đồng thời giảm khả năng cảm nhận niềm vui từ hoạt động hàng ngày. Anhedonia cũng là một trong những triệu chứng khá phổ biến, cốt lõi của bệnh rối loạn trầm cảm thể nặng.</p>
+<p>Anhedonia là một triệu chứng cốt lõi của bệnh trầm cảm và bệnh tâm thần phân liệt. Tuy nhiên, đôi khi cũng có một vài trường hợp bệnh nhân phải đối mặt với cơn đau mãn tính và bệnh Parkinson có liên quan đến Anhedonia. Bên cạnh đó, Anhedonia có thể xuất hiện do lạm dụng chất kích thích quá nhiề</p>
+</details>
+</details>
+<details class="question">
+<summary>Hội chứng Catatonia?</summary>
+<details class="success">
+<summary>Cố gắng nhớ lại trước khi xem đáp án</summary>
+<p>Catatonia là một dạng rối loạn tâm thần ảnh hưởng trực tiếp đến chức năng vận động của người bệnh. Vấn đề sức khỏe này còn được biết đến với tên gọi thứ hai là hội chứng căng trương lực. </p>
+<p>Bệnh xuất hiện theo cơn hoặc từng đợt. Nghiên cứu cho thấy thời gian kéo dài của mỗi đợt có thể từ vài giờ đến cả chục ngày.</p>
+<p>Catatonia cũng có thể khởi phát nếu có sự bất thường trong cấu trúc và hoạt động của hệ thống dẫn truyền thần kinh glutamate, axit gamma-aminobutyric (GABA) và dopamine. </p>
+</details>
+</details>
+<details class="question">
+<summary>Thư viện trí tuệ Chunks?</summary>
+<details class="success">
+<summary>Cố gắng nhớ lại trước khi xem đáp án</summary>
+<p>Về cơ bản, phương pháp để tăng cường kiến thức và kỹ năng, là xây dựng dần dần số lượng các Chunk ý tưởng trong đầu, các mảng thông tin quý giá mà người ta có thể kết nối với nhau theo các cách mới và sáng tạo.</p>
+<p>Thư viện trí tuệ phân theo Chunk của bạn càng lớn và càng được thực hành nhiều, bất kể bạn đang học môn gì, thì bạn sẽ càng có khả năng giải quyết vấn đề và tìm ra giải pháp. </p>
+<div class="admonition example">
+<p class="admonition-title">Đại kỳ thủ cờ tướng có thể dễ dàng truy cập hàng ngàn cách đánh cờ khác nhau</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Nhạc sĩ/nhà ngôn ngữ học/nhà khoa học có thể dễ dàng truy cập các Chunk kiến thức trong lĩnh vực của họ</p>
+</div>
+</details>
+</details>
+<details class="question">
+<summary>Sự chuyển giao Chunk là gì?</summary>
+<details class="success">
+<summary>Cố gắng nhớ lại trước khi xem đáp án</summary>
+<p>Các Chunk cũng giúp bạn hiểu những khái niệm mới. Đó là vì khi bạn đã hiểu rõ một Chunk bạn sẽ thấy là Chunk đó có thể có quan hệ với các Chunk tương tự một cách bất ngờ, không chỉ trong cùng lĩnh vực, nhưng ở cả các lĩnh vực rất khác nhau.</p>
+</details>
+</details>
+<details class="question">
+<summary>Overlearning là gì?</summary>
+<details class="success">
+<summary>Cố gắng nhớ lại trước khi xem đáp án</summary>
+<p>Overlearning (học quá mức) là tiếp tục học hoặc thực hành sau khi bạn đã thành thạo những gì bạn có thể trong buổi học.</p>
+<div class="admonition example">
+<p class="admonition-title">TED experts thường tập 70 tiếng cho 20 phút nói</p>
+</div>
+<p>Tuy nhiên, overlearning quá nhiều sẽ tốn thời gian bởi vì khi bạn đã hiểu rõ một vấn đề thì điều đó trở nên dễ dàng, nếu bạn cứ quanh quẩn làm việc dễ dàng thì bạn dễ bị rơi vào trạng thái Ảo Tưởng Năng Lực vì những việc dễ dàng.</p>
+</details>
+</details>
+<details class="question">
+<summary>Deliberate Practice là gì?</summary>
+<details class="success">
+<summary>Cố gắng nhớ lại trước khi xem đáp án</summary>
+<p>Deliberate Practice (thực hành có chủ đích) là việc bạn tập trung vào những việc khó hơn.</p>
+</details>
+</details>
+</div>
+<h2 id="procrastination-and-memory">Procrastination and Memory<a class="headerlink" href="#procrastination-and-memory" title="Permanent link">&para;</a></h2>
+<h2 id="renaissance-learning-and-unlocking-your-potential">Renaissance Learning and Unlocking Your Potential<a class="headerlink" href="#renaissance-learning-and-unlocking-your-potential" title="Permanent link">&para;</a></h2>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+  
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Was this page helpful?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m7 0c0 .8-.7 1.5-1.5 1.5S14 10.3 14 9.5 14.7 8 15.5 8s1.5.7 1.5 1.5m-5 7.73c-1.75 0-3.29-.73-4.19-1.81L9.23 14c.45.72 1.52 1.23 2.77 1.23s2.32-.51 2.77-1.23l1.42 1.42c-.9 1.08-2.44 1.81-4.19 1.81"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10m-6.5-4c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5.7-1.5 1.5-1.5M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m2 4.5c1.75 0 3.29.72 4.19 1.81l-1.42 1.42C14.32 16.5 13.25 16 12 16s-2.32.5-2.77 1.23l-1.42-1.42C8.71 14.72 10.25 14 12 14"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              Thanks for your feedback!
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              Thanks for your feedback! Help us improve this page by using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2024 - 2025 <a href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=chanvi" target="_blank" rel="noopener">Codey Nham Chan Vi</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=chanvi" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/nhamchanvi" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.expand", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.progress", "navigation.prune", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>
