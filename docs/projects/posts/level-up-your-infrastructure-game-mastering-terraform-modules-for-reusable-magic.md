@@ -216,6 +216,9 @@ module "ec2-instance" {
 
 ### 5. Test Your "Recipe."
 
+```bash title="cd examples/development"
+```
+
 ```bash title="terraform init"
 Initializing the backend...
 Initializing modules...
